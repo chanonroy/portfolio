@@ -1,0 +1,44 @@
+#terminal {
+    max-width: 800px;
+    margin: 7% auto;
+    height: 400px;
+
+}
+#header {
+    background: linear-gradient(#f1f1f1 , #d3d3d3);
+    width: 100%;
+    height: 30px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    border-bottom: 2px solid;
+    border-color: #9a9a9a;
+}
+.dot {
+    position: absolute;
+    top: 40%;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.red {
+    margin-left: 10px;
+    background: #fc625d;
+}
+
+.yellow {
+    margin-left: 30px;
+    background: #fdbc40;
+}
+
+.green {
+    margin-left: 50px;
+    background: #33c748;
+}
+.panel {
+    height: 40vh;
+    background: #27292c;
+    padding: 20px;
+    overflow-y: scroll;
+    opacity: 0.9;
+}
