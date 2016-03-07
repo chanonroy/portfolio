@@ -173,12 +173,12 @@ body {
 }
 
 .level2 {
-    background-image: url("/static/imgs/skyline.png");
+    background-image: url("../imgs/skyline.png");
     animation-duration: 90s;
 }
 
 .level1 {
-    background-image: url("/static/imgs/treeline-big.png");
+    background-image: url("../imgs/treeline-big.png");
     background-size: 600px 158px;
     height: 108px;
     animation-duration: 60s;
