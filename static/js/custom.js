@@ -5,7 +5,7 @@ $(window).scroll(function() {
         $('.navbar-fixed-top').addClass('show');
     } else {
         $('.navbar-fixed-top').removeClass('show');
-    };
+    }
 });
 
 $(document).ready(function(){
