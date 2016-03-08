@@ -28,46 +28,6 @@ $(function() {
     });
 });
 
-// --------------------- Opacity Rollover -------------------------
-//      (There's probably an object oriented way to do this) ...
-
-$(document).ready(function(){
-  $("#dev-fill").mouseenter(function(){
-      $("#skills-wrap").addClass("dev-settings");
-    });
-  $("#dev-fill").mouseleave(function(){
-      $("#skills-wrap").removeClass("dev-settings");
-    });
-});
-
-$(document).ready(function(){
-  $("#graphic-fill").mouseenter(function(){
-      $("#skills-wrap").addClass("graphic-settings");
-    });
-  $("#graphic-fill").mouseleave(function(){
-      $("#skills-wrap").removeClass("graphic-settings");
-    });
-});
-
-$(document).ready(function(){
-  $("#photo-fill").mouseenter(function(){
-      $("#skills-wrap").addClass("photo-settings");
-    });
-  $("#photo-fill").mouseleave(function(){
-      $("#skills-wrap").removeClass("photo-settings");
-    });
-});
-
-$(document).ready(function(){
-  $("#social-fill").mouseenter(function(){
-      $("#skills-wrap").addClass("social-settings");
-    });
-  $("#social-fill").mouseleave(function(){
-      $("#skills-wrap").removeClass("social-settings");
-    });
-});
-
-
 // -------------------- jQuery Isotope.js Portfolio Filter ---------------
 
 $(window).load(function(){
@@ -117,3 +77,9 @@ setTimeout(function(){
         loop: false,                // loop (True/False)
     });
 }, 1000);
+
+// ----------------------- Social Media Buttons ------------------------
+
+$(".social").hover(function () {
+    $(this).toggleClass("on");
+});
