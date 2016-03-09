@@ -66,13 +66,13 @@ $(window).load(function(){
 
 setTimeout(function(){
     $("#typed").typed({
-        strings: ["<font color='#46c84d'>$</font> ^1000 Hello, my name is Chanon ^750 <br> " +
-        "<font color='#46c84d'>$</font> I'm a Web Developer and Multimedia Specialist from Ottawa ^750 <br> " +
-        "<font color='#46c84d'>$</font> I love learning new things and building cool stuff ^750 <br> " +
-        "<font color='#46c84d'>$</font> In 2006, I was named TIME Magazine's Person of the Year ^750 <br> " +
+        strings: ["<font color='#46c84d'>$</font> ^1000 Hi there ^1000 <br> " +
+        "<font color='#46c84d'>$</font> My name is Chanon ^1000 <br> " +
+        "<font color='#46c84d'>$</font> ^750 I'm a Web Developer from Ottawa, Canada ^1000 <br> " +
+        "<font color='#46c84d'>$</font> ^750 I love making computers do wonderful things with code ^750 <br> " +
+        "<font color='#46c84d'>$</font> In 2006, ^500 I was named TIME Magazine's Person of the Year. ^750 <br> " +
         "<font color='#46c84d'>$</font> My actual typing speed is similar to this ^750 <br> " +
-        "<font color='#46c84d'>$</font> Feel free to check out my code on Github ^750 <br> " +
-        "<font color='#46c84d'>$</font> Please note that this site is still in development ..." ],
+        "<font color='#46c84d'>$</font> ^750 Use the navigation above or scroll down to read more  ^750" ],
         typeSpeed: 25,               // sets the typing speed, default = 0
         loop: false,                // loop (True/False)
     });

@@ -10,7 +10,7 @@
 
   <!-- Bootstrap Official CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"> -->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
@@ -23,7 +23,7 @@
   <meta property="og:title" content="Chanon Roy">
   <meta property="og:site_name" content="Chanon Roy">
   <meta property="og:type" content="website">
-  <meta property="og:description" content="Web Developer and Multimedia Specialist from Ottawa, Ontario">
+  <meta property="og:description" content="Web Developer from Ottawa, Ontario">
   <meta property="og:image" content="static/imgs/roy.ico">
   <meta property="og:url" content="http://chanonroy.github.io">
 
@@ -69,7 +69,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li>
             <a href="#2">
-              <div class="flip"><span data-title="My Skills">My Skills</span></div>
+              <div><span data-title="My Skills">My Skills</span></div>
             </a>
           </li>
           <li><a href="#3">Portfolio</a></li>
@@ -85,7 +85,12 @@
   <!-- Jumbotron -->
   <section id="1" class="navfix">
     <div id="cover" class="jumbotron">
-      <div id="terminal">
+      <div id="opening" class="visible-xs">
+        <h1> Hi There </h2>
+        <h2> My name is Chanon </h2>
+        <h3> I'm a Web Developer <br> from Ottawa, Canada </h3>
+      </div>
+      <div id="terminal" class="hidden-xs">    <!-- Hides Terminal on Mobile -->
         <div id="header">
           <div class="dot red"></div>
           <div class="dot yellow"></div>
@@ -112,31 +117,31 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h1 class="section-heading"><strong>My Skills</strong> &nbsp;<span class="glyphicon glyphicon-check"></span></h1>
-            <h2> What can I help you with?</h2>
+            <!-- <h2> What can I help you with?</h2> -->
           </div>
         </div>
         <br>
         <div class="row text-center">
-          <div class="col-lg-3 col-xs-6">
+          <div class="col-lg-3 col-sm-6 col-xs-12">
             <img src="static/imgs/dev.png" style="width:80px; height:80px">
-            <h3> Web Dev</h3>
-            <p> HTML5, CSS3, Bootstrap, JavaScript, jQuery, Python, SQL </p>
+            <h3> Front-End Dev </h3>
+            <p> HTML5, CSS3, Bootstrap, JavaScript, jQuery, Build Tools </p>
           </div>
-          <div class="col-lg-3 col-xs-6">
-            <img src="static/imgs/photos.png" style="width:80px; height:80px">
-            <h3>Multimedia</h3>
-            <p> Photoshop, Illustrator, Premiere Pro, InDesign, Editing </p>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <img src="static/imgs/back.png" style="width:80px; height:80px">
+            <h3> Back-End Logic </h3>
+            <p> Python, Node.js, SQL, APIs, REST </p>
           </div>
           <div class="clearfix visible-xs"></div> <!-- Clearfix on mobile -->
-          <div class="col-lg-3 col-xs-6 ">
-            <img src="static/imgs/research.png" style="width:80px; height:80px">
-            <h3>User Research</h3>
-            <p>Use Cases, Surveys, Validation Testing, Personas </p>
+          <div class="col-lg-3 col-sm-6 col-xs-12 ">
+            <img src="static/imgs/ops.png" style="width:80px; height:80px">
+            <h3> Dev Tools </h3>
+            <p> Git VCS, Command Line, Unit Testing, Deployment </p>
           </div>
-          <div class="col-lg-3 col-xs-6 ">
-            <img src="static/imgs/chart.png" style="width:80px; height:80px">
-            <h3>Social Media</h3>
-            <p>Hootsuite, SEO, Analytics, Web Writing, Developer APIs</p>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <img src="static/imgs/cam.png" style="width:80px; height:80px">
+            <h3> Other </h3>
+            <p> Multimedia, Analytics, SEO, Web Writing </p>
           </div>
         </div>
       </div>
@@ -154,43 +159,42 @@
           <div class="portfolioFilter">
             <!-- Data-Filter: .category -->
             <a href="#" data-filter="*" class="current">All</a>
-            <a href="#" data-filter=".websites">Websites</a>
-            <a href="#" data-filter=".graphics">Graphic Design</a>
-            <a href="#" data-filter=".videos">Videos</a>
-            <a href="#" data-filter=".hackathons">Hackathons</a>
-            <a href="#" data-filter=".campaigns">Campaigns</a>
-            <a href="#" data-filter=".dev">Coming Soon</a>
+            <a href="#" data-filter=".app"> Web Apps </a>
+            <a href="#" data-filter=".static"> Static Sites </a>
+            <a href="#" data-filter=".hackathons"> Hackathons </a>
+            <a href="#" data-filter=".gov"> Government </a>
+            <a href="#" data-filter=".other"> Other </a>
           </div>
           <hr>
         </div>
 
         <div class="container">
           <div class="portfolioContainer">
-            <div class="grid-item grid-shadow graphics websites dev">
+            <div class="grid-item grid-shadow graphics app">
               <img src="static/imgs/candf.png" class="img-responsive">
             </div>
-            <div class="grid-item grid-shadow graphics websites dev">
+            <div class="grid-item grid-shadow graphics static">
               <img src="static/imgs/hc.png" class="img-responsive">
             </div>
-            <div class="grid-item grid-shadow websites graphics dev">
+            <div class="grid-item grid-shadow static">
               <img src="static/imgs/gilios.png" class="img-responsive">
             </div>
-            <div class="grid-item grid-shadow hackathons graphics">
+            <div class="grid-item grid-shadow hackathons">
               <img src="static/imgs/shift.png" class="img-responsive">
             </div>
-            <div class="grid-item grid-shadow graphics hackathons">
+            <div class="grid-item grid-shadow gov hackathons">
               <img src="static/imgs/ob.jpg" class="img-responsive">
             </div>
-            <div class="grid-item grid-shadow campaigns">
+            <div class="grid-item grid-shadow gov">
               <img src="static/imgs/forces.png" class="img-responsive">
             </div>
-            <div class="grid-item grid-shadow videos">
+            <div class="grid-item grid-shadow other">
               <img src="static/imgs/chess.png" class="img-responsive">
             </div>
-            <div class="grid-item grid-shadow campaigns">
+            <div class="grid-item grid-shadow gov">
               <img src="static/imgs/gcwcc.png" class="img-responsive">
             </div>
-            <div class="grid-item grid-shadow graphics">
+            <div class="grid-item grid-shadow other">
               <img src="static/imgs/swap.jpg" class="img-responsive">
             </div>
           </div>
@@ -219,20 +223,20 @@
         <br>
         <br>
         <div class="row text-center">
-          <div class="col-lg-3 col-xs-6">
+          <div class="col-lg-3 col-sm-6 col-xs-12">
             <img src="static/imgs/treehouse.png" style="width:80px; height:80px">
             <h3 class="service-heading">Team Treehouse</h3>
           </div>
-          <div class="col-lg-3 col-xs-6">
+          <div class="col-lg-3 col-sm-6 col-xs-12">
             <img src="static/imgs/codecademy.jpg" style="width:80px; height:80px">
             <h3 class="service-heading">Codecademy</h3>
           </div>
           <div class="clearfix visible-xs"></div>
-          <div class="col-lg-3 col-xs-6">
+          <div class="col-lg-3 col-sm-6 col-xs-12">
             <img src="static/imgs/udemy.jpg" style="width:80px; height:80px">
             <h3 class="service-heading">Udemy</h3>
           </div>
-          <div class="col-lg-3 col-xs-6">
+          <div class="col-lg-3 col-sm-6 col-xs-12">
             <img src="static/imgs/youtube.png" style="width:80px; height:80px">
             <h3 class="service-heading">YouTube Tutorials</h3>
           </div>
@@ -245,7 +249,7 @@
       <div class="container text-center">
         <h1><b>Work Experience</b> &nbsp;<span class="glyphicon glyphicon-briefcase"></span></h1>
         <br>
-        <h2><b> 1 Year of Combined Full-Time Experience</b><br>with the Government of Canada</h2>
+        <h2><b> 1 Year of Combined <br>Full-Time Experience</b><br>Government of Canada</h2>
         <br>
         <h2><b> National Defence</b> <br> <b>Justice Canada</b></h2>
         <br>
@@ -264,27 +268,27 @@
         <br>
         <br>
         <div class="row text-center">
-          <div class="col-lg-3 col-xs-6">
+          <div class="col-lg-3 col-sm-6 col-xs-12">
             <img src="static/imgs/unicef.png" style="width:80px; height:80px;">
             <h3 class="service-heading">UNICEF at Western </h3>
             <p> Campus club representing UNICEF in the London, Ontario region
               <br> (2012-2015)</p>
           </div>
-          <div class="col-lg-3 col-xs-6">
+          <div class="col-lg-3 col-sm-6 col-xs-12">
             <img src="static/imgs/mustangs.png" style="width:80px; height:80px">
             <h3 class="service-heading">Western Mustangs</h3>
             <p> Sports journalism, statistics reports, and web graphics
               <br> (2013) </p>
           </div>
           <div class="clearfix visible-xs"></div>
-          <div class="col-lg-3 col-xs-6">
+          <div class="col-lg-3 col-sm-6 col-xs-12">
             <img src="static/imgs/bhutan.jpg" style="width:80px; height:80px">
             <h3 class="service-heading">Internship in Bhutan</h3>
             <p> Youth outreach and social media for
               <br> the Election Commission of Bhutan
               <br> (2015)</p>
           </div>
-          <div class="col-lg-3 col-xs-6">
+          <div class="col-lg-3 col-sm-6 col-xs-12">
             <img src="static/imgs/code.png" style="width:80px; height:80px">
             <h3 class="service-heading">Hackathons</h3>
             <p>Code GCconnex (Ottawa, 2015)

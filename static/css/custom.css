@@ -7,52 +7,6 @@ body {
   /* Google Fonts */
 }
 
-/* PADDING */
-
-#skills-inner.container {
-  padding: 20px;
-}
-
-/* ----------- Roll Over for Skill Section ------------------*/
-
-.dev-settings {
-  transition: background-color 0.7s ease;
-  background-color: #3696c9;
-  color: white;
-}
-.graphic-settings {
-  transition: background-color 0.7s ease;
-  background-color: #de4e5f;
-  color: white;
-}
-.photo-settings {
-  transition: background-color 0.7s ease;
-  background-color: #f6961e;
-  color: white;
-}
-.social-settings {
-  transition: background-color 0.7s ease;
-  background-color: #32bca6;
-  color: white;
-}
-.text-shadow {
-  text-shadow: 2px 2px 4px #000000;
-}
-#aboutme {
-  padding: 30px;
-}
-#learning {
-  padding: 20px;
-}
-
-/* footer with id CONTACT */
-
-#portfolio.container-fluid {
-  /*background: #184458 url("/static/imgs/black-linen.png");*/
-  background: #16294b;
-  color: #eaeaea;
-}
-
 /* ===========================================================
                      Navigation Bar
  ========================================================== */
@@ -98,12 +52,27 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-/* -------------- Hover Navigation Buttons ---------------- */
+/* ------------------ Fixed Nav Solution ------------------------ */
+
+.navfix:before {
+  display: block;
+  position: relative;
+  margin-top: -50px;
+  height: 50px;
+  content: " ";
+  visibility: hidden;
+}
 
 
 /* =====================================================
                     Front Page Items
 ====================================================== */
+
+#opening {
+  text-align: center;
+  padding-top: 20vh;
+  font-weight: bold;
+}
 
 #cover.jumbotron {
   margin-bottom: 0px;
@@ -143,7 +112,7 @@ body {
   animation: slide linear infinite;
 }
 .level2 {
-  background-image: url("../imgs/skyline.png");
+  background-image: url("../imgs/skyline2.png");
   animation-duration: 90s;
 }
 .level1 {
@@ -154,68 +123,16 @@ body {
 }
 
 /* =====================================================
-               Solution for Fixed Nav Anchor
+                      My Skills
 ====================================================== */
 
-.navfix:before {
-  display: block;
-  position: relative;
-  margin-top: -50px;
-  height: 50px;
-  content: " ";
-  visibility: hidden;
+#skills-inner.container {
+  padding: 20px;
 }
 
-/* =====================================================
-                    Typed.js Package
- ==================================================== */
-
-.typed-cursor {
-  opacity: 1;
-  -webkit-animation: blink 1s infinite;
-  -moz-animation: blink 1s infinite;
-  animation: blink 1s infinite;
-}
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-#typed {
-  color: #fff4fb;
-  font-size: 25px;
-}
 
 /* ===========================================================
-                 Isotope.js custom styling
+                 Isotope.js custom (Portfolio)
  ========================================================== */
 
 .portfolioFilter a {
@@ -235,15 +152,22 @@ body {
   width: 32%;
   margin: 5px;
 }
-.grid-shadow {
+/*.grid-shadow {
   -webkit-box-shadow: 7px 12px 23px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 7px 12px 23px -4px rgba(0, 0, 0, 0.75);
   box-shadow: 7px 12px 23px -4px rgba(0, 0, 0, 0.75);
-}
+}*/
 .portfolioContainer {
   width: 100%;
   margin: auto;
 }
+
+#portfolio.container-fluid {
+  /*background: #184458 url("/static/imgs/black-linen.png");*/
+  background: #16294b;
+  color: #eaeaea;
+}
+
 
 /* ===========================================================
                       About Me Styling
@@ -279,6 +203,12 @@ body {
   color: #eaeaea;
   background-color: #1d333a;
   padding: 15px;
+}
+
+#portfolio.container-fluid {
+  /*background: #184458 url("/static/imgs/black-linen.png");*/
+  background: #16294b;
+  color: #eaeaea;
 }
 
 .social {
@@ -319,9 +249,6 @@ body {
   .grid-item {
     width: 47%;
     margin: 4px;
-  }
-  #typed {
-    font-size: 20px;
   }
 }
 

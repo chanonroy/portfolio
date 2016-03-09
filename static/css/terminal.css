@@ -1,10 +1,15 @@
-#terminal {
+/* =====================================================
+                  Terminal CSS Code
+ ==================================================== */
+
+#terminal {                    /* terminal positioning */
     max-width: 800px;
     margin: 7% auto;
     height: 400px;
 
 }
-#header {
+
+#header {                      /* top ui bar */
     background: linear-gradient(#f1f1f1 , #d3d3d3);
     width: 100%;
     height: 30px;
@@ -13,7 +18,16 @@
     border-bottom: 2px solid;
     border-color: #9a9a9a;
 }
-.dot {
+
+.panel {                      /* terminal background */
+    height: 40vh;
+    background: #27292c;
+    padding: 20px;
+    overflow-y: scroll;
+    opacity: 0.9;
+}
+
+.dot {                        /* size of dots */
     position: absolute;
     top: 40%;
     width: 10px;
@@ -35,10 +49,55 @@
     margin-left: 50px;
     background: #33c748;
 }
-.panel {
-    height: 40vh;
-    background: #27292c;
-    padding: 20px;
-    overflow-y: scroll;
-    opacity: 0.9;
+
+/* =====================================================
+                    Typed.js Code
+ ==================================================== */
+
+#typed {                      /* Text styling for Typed.js */
+  /*font-family: "Consolas";*/
+  /*font-weight: bold;*/
+  font-size: 1.1em;
+  color: white;
+}
+
+
+.typed-cursor {               /* Blinking cursor */
+  opacity: 1;
+  -webkit-animation: blink 1s infinite;
+  -moz-animation: blink 1s infinite;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
