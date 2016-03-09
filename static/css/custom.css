@@ -21,12 +21,14 @@ body {
 .nav.navbar-nav.navbar-right li a {
   color: white;
   font-size: 16px;
+  font-weight: bold;
 }
 .nav.navbar-nav.navbar-right li a:hover {
-  color: #a8a9a9;
+  color: #E3E7EB;
 }
 .navbar-default .navbar-brand {
   color: white;
+  font-weight: bold;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -136,31 +138,6 @@ body {
   animation-duration: 60s;
 }
 
-/* -------- Static Background for Mobile ----------- */
-
-.holder-static, .level2-static, .level1-static {
-  min-height: 100%;
-  position: absolute;
-  bottom: 0;
-}
-.holder-static {
-  width: 100%;
-  overflow: hidden;
-}
-.level2-static, .level1-static {
-  width: 100vw;
-  height: 198px;
-  background-repeat: repeat-x;
-  background-position: left bottom;
-  background-size: 600px 198px;
-}
-.level2-static {
-  background-image: url("../imgs/skyline2.png");
-}
-.level1-static {
-  background-image: url("../imgs/treeline-big.png");
-  background-size: 600px 158px;
-}
 
 /* =====================================================
                       My Skills
@@ -208,6 +185,53 @@ body {
   color: #eaeaea;
 }
 
+/* ------------------- Portfolio Rollover ------------------ */
+
+.port-text {
+ position: absolute;
+ top:0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ text-align: center;
+ padding: 10px;
+ background: rgba(46, 117, 179, 0.95);
+ color: #fff;
+ visibility: hidden;
+ opacity: 0;
+
+ -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+     -ms-transition: all 0.5s ease;
+         transition: all 0.5s ease;
+
+}
+
+.port-text h4 h5 {
+  padding: 20px 20px 20px 20px;
+}
+
+.grid-item:hover .port-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ghost-button {
+    color: white;
+    border: 1px solid white;
+    background: transparent;
+    padding: 10px 35px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.ghost-button:hover, .ghost-button:active {
+  background: white;
+  text-decoration: none;
+}
 
 /* ===========================================================
                       About Me Styling
@@ -268,7 +292,7 @@ body {
 
  @media screen and (max-width: 992px) {
    .grid-item {
-     width: 32%;
+     width: 48%;
      margin: 2px;
    }
  }

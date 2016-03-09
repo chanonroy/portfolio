@@ -86,7 +86,7 @@
   <section id="1" class="navfix">
     <div id="cover" class="jumbotron">
       <div id="opening" class="visible-xs">
-        <h1> Hi There </h2>
+        <h1> Hi There </h1>
         <h2> My name is Chanon </h2>
         <h3> I'm a Web Developer <br> from Ottawa, Canada </h3>
       </div>
@@ -102,14 +102,14 @@
           </div>
         </div>
       </div>
-      <div class="holder hidden-xs">          <!-- animated background (not on mobile) -->
+      <div class="holder">                      <!-- hidden-xs, if need to hide on mobile -->
         <div class="level2"></div>
         <div class="level1"></div>
       </div>
-      <div class="holder visible-xs">          <!-- fixed background (for mobile) -->
+      <!-- <div class="holder-static visible-xs">       fixed background (for mobile)
         <div class="level2-static"></div>
         <div class="level1-static"></div>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -133,7 +133,7 @@
           <div class="col-lg-3 col-sm-6 col-xs-12">
             <img src="static/imgs/back.png" style="width:80px; height:80px">
             <h3> Back-End </h3>
-            <p> Python, Node.js, SQL, APIs, REST </p>
+            <p> Python, SQL, APIs, RESTful Services </p>
           </div>
           <div class="clearfix visible-xs"></div> <!-- Clearfix on mobile -->
           <div class="col-lg-3 col-sm-6 col-xs-12 ">
@@ -152,7 +152,6 @@
   </section>
 
   <!-- Projects & Past Work -->
-  <!-- Page Content -->
   <section id="3" class="navfix">
     <div id="portfolio" class="container-fluid">
       <div class="container">
@@ -160,7 +159,7 @@
         <div class="text-center">
           <h1 class="page-header"><strong> Portfolio </strong> &nbsp;<span class="glyphicon glyphicon-folder-open"></span></h1>
           <div class="portfolioFilter">
-            <!-- Data-Filter: .category -->
+            <!-- Data-Filter: .category (category for filters) -->
             <a href="#" data-filter="*" class="current">All</a>
             <a href="#" data-filter=".app"> Web Apps </a>
             <a href="#" data-filter=".static"> Static Sites </a>
@@ -173,32 +172,83 @@
 
         <div class="container">
           <div class="portfolioContainer">
-            <div class="grid-item grid-shadow graphics app">
+            <div class="grid-item blur graphics app">
               <img src="static/imgs/candf.png" class="img-responsive">
+              <div class="port-text">
+                <h4> Critics and Flicks <br> (2016) </h4>
+                <h5> Guess the movie by reading the reviews </h5>
+                <h5> Python, Flask, PostgreSQL </h5>
+                <h5> Lead Developer </h5>
+                <br><a href="#" class="ghost-button">Coming Soon</a>      <!-- should get rid of BRs -->
+              </div>
             </div>
-            <div class="grid-item grid-shadow graphics static">
+            <div class="grid-item blur graphics static">
               <img src="static/imgs/hc.png" class="img-responsive">
+              <div class="port-text">
+                <h4> Himalayan Cleaners (2016) </h4>
+                <h5> Eco-friendly cleaning business in Ottawa </h5>
+                <h5> Primary Developer </h5>
+                <br><a href="#" target="_blank" class="ghost-button">Coming Soon</a>
+              </div>
             </div>
-            <div class="grid-item grid-shadow static">
+            <div class="grid-item blur static">
               <img src="static/imgs/gilios.png" class="img-responsive">
+              <div class="port-text">
+                <h4> Gilio's (2016) </h4>
+                <h5> Hair stylist and beauty supplier based in Ottawa, Canada </h5>
+                <h5> Primary Developer </h5>
+                <br><a href="#" target="_blank" class="ghost-button">Coming Soon</a>
+              </div>
             </div>
-            <div class="grid-item grid-shadow hackathons">
+            <div class="grid-item blur hackathons">
               <img src="static/imgs/shift.png" class="img-responsive">
+              <div class="port-text">
+                <h4> Budweiser Hackathon <br> (Toronto, 2016)</h4>
+                <h5> A cost calculator and ride sharing tool for designated drivers </h5>
+                <h5> Concept Lead and Designer </h5>
+                <br><a href="http://www.brainstation.io/tackleimpossible" target="_blank" class="ghost-button">View Event</a>
+              </div>
             </div>
-            <div class="grid-item grid-shadow gov hackathons">
+            <div class="grid-item blur gov hackathons">
               <img src="static/imgs/ob.jpg" class="img-responsive">
+              <div class="port-text">
+                <h4> Code GCconnex Hackathon <br> (Ottawa, 2015)</h4>
+                <h5> An innovation generator and aggregate system for the GCconnex platform </h5>
+                <h5> Front-End Designer </h5>
+                <br><a href="http://tbs-sct.github.io/about-en.html" target="_blank" class="ghost-button">View Event</a>
+              </div>
             </div>
-            <div class="grid-item grid-shadow gov">
+            <div class="grid-item blur gov">
               <img src="static/imgs/forces.png" class="img-responsive">
+              <div class="port-text">
+                <h4> Department of National Defence <br> Canadian Armed Forces <br> Web Renewal (2013) </h4>
+                <h5> Assisted in upgrading the organization's web presence to comply with modern web accessibility standards </h5>
+                <h5> Front-End Developer </h5>
+                <br><a href="http://www.forces.gc.ca/en/index.page" target="_blank" class="ghost-button">View Site</a>
+              </div>
             </div>
-            <div class="grid-item grid-shadow other">
+            <div class="grid-item blur other">
               <img src="static/imgs/chess.png" class="img-responsive">
+              <div class="port-text">
+                <h4> 'A Noble Death' Short Film <br> (2014) </h4>
+                <h5> Director and Voice Actor </h5>
+                <br><a href="https://www.youtube.com/watch?v=Za7wvHTBYhA" target="_blank" class="ghost-button">View Film</a>
+              </div>
             </div>
-            <div class="grid-item grid-shadow gov">
+            <div class="grid-item blur gov">
               <img src="static/imgs/gcwcc.png" class="img-responsive">
+              <div class="port-text">
+                <h4> Government of Canada <br> Charitable Workplace Campaign <br> (2016) </h4>
+                <h5> Government Multimedia Specialist </h5>
+                <br><a href="#" target="_blank" class="ghost-button">View Site</a>
+              </div>
             </div>
-            <div class="grid-item grid-shadow other">
+            <div class="grid-item blur other">
               <img src="static/imgs/swap.jpg" class="img-responsive">
+              <div class="port-text">
+                <h4> Face swap using photoshop </h4>
+                <h5> Graphic Design </h5>
+              </div>
             </div>
           </div>
         </div>
@@ -315,10 +365,10 @@
           <div class="col-sm-4">
             <h4> Follow &nbsp;<span class="glyphicon glyphicon-user"></span></h4>
             <p>
-              <a href="https://github.com/chanonroy"><img src="static/imgs/github.png" class="social"></a>
-              <a href="https://www.linkedin.com/in/chanonroy"><img src="static/imgs/linkedin.png" class="social"></a>
-              <a href="#"><img src="static/imgs/facebook.png" class="social"></a>
-              <a href="https://twitter.com/chanonroy"><img src="static/imgs/twitter.png" class="social"></a>
+              <a href="https://github.com/chanonroy" target="_blank"><img src="static/imgs/github.png" class="social"></a>
+              <a href="https://www.linkedin.com/in/chanonroy" target="_blank"><img src="static/imgs/linkedin.png" class="social"></a>
+              <a href="#" target="_blank"><img src="static/imgs/facebook.png" class="social"></a>
+              <a href="https://twitter.com/chanonroy" target="_blank"><img src="static/imgs/twitter.png" class="social"></a>
             </p>
           </div>
           <div class="col-sm-4">
