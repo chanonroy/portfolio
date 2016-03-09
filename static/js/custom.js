@@ -67,12 +67,12 @@ $(window).load(function(){
 setTimeout(function(){
     $("#typed").typed({
         strings: ["<font color='#46c84d'>$</font> ^1000 Hi there ^1000 <br> " +
-        "<font color='#46c84d'>$</font> My name is Chanon ^1000 <br> " +
+        "<font color='#46c84d'>$</font> My name is Chanon Roy^1000 <br> " +
         "<font color='#46c84d'>$</font> ^750 I'm a Web Developer from Ottawa, Canada ^1000 <br> " +
         "<font color='#46c84d'>$</font> ^750 I love making computers do wonderful things with code ^750 <br> " +
         "<font color='#46c84d'>$</font> In 2006, ^500 I was named TIME Magazine's Person of the Year. ^750 <br> " +
         "<font color='#46c84d'>$</font> My actual typing speed is similar to this ^750 <br> " +
-        "<font color='#46c84d'>$</font> ^750 Use the navigation above or scroll down to read more  ^750" ],
+        "<font color='#46c84d'>$</font> ^750 Use the navigation above or scroll down to see more  ^750" ],
         typeSpeed: 25,               // sets the typing speed, default = 0
         loop: false,                // loop (True/False)
     });

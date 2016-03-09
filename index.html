@@ -61,7 +61,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#1"><strong>Chanon Roy</strong></a>
+        <a class="navbar-brand" href="#1"><img src="static/imgs/roy.jpg" id="brand"><strong>Chanon Roy</strong></a>
       </div>
 
       <!-- Menu Items -->
@@ -102,10 +102,13 @@
           </div>
         </div>
       </div>
-      <div class="holder">
-        <div class="level3"></div>
+      <div class="holder hidden-xs">          <!-- animated background (not on mobile) -->
         <div class="level2"></div>
         <div class="level1"></div>
+      </div>
+      <div class="holder visible-xs">          <!-- fixed background (for mobile) -->
+        <div class="level2-static"></div>
+        <div class="level1-static"></div>
       </div>
     </div>
   </section>
@@ -124,12 +127,12 @@
         <div class="row text-center">
           <div class="col-lg-3 col-sm-6 col-xs-12">
             <img src="static/imgs/dev.png" style="width:80px; height:80px">
-            <h3> Front-End Dev </h3>
+            <h3> Front-End </h3>
             <p> HTML5, CSS3, Bootstrap, JavaScript, jQuery, Build Tools </p>
           </div>
           <div class="col-lg-3 col-sm-6 col-xs-12">
             <img src="static/imgs/back.png" style="width:80px; height:80px">
-            <h3> Back-End Logic </h3>
+            <h3> Back-End </h3>
             <p> Python, Node.js, SQL, APIs, REST </p>
           </div>
           <div class="clearfix visible-xs"></div> <!-- Clearfix on mobile -->

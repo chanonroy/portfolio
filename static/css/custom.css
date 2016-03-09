@@ -27,14 +27,27 @@ body {
 }
 .navbar-default .navbar-brand {
   color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
+
+#brand {
+  height: 30px;
+  width: 30px;
+  display: inline;
+  margin-right: 10px;
+  border-radius: 10px;
+
+}
+
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: white;
 }
 .navbar-nav > li {
-  margin-left: 2px;
-  margin-right: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
+
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
 }
@@ -42,7 +55,8 @@ body {
 /* ------------------ After Scroll ------------------------ */
 
 .show {
-  background: #1e5699;
+  /*background: #1e5699;*/
+  background: #2E76B5;
   box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.4);
 }
 .transition {
@@ -94,7 +108,7 @@ body {
     transform: translate3d(-800px, 0, 0);
   }
 }
-.holder, .level3, .level2, .level1 {
+.holder, .level2, .level1 {
   min-height: 100%;
   position: absolute;
   bottom: 0;
@@ -103,7 +117,7 @@ body {
   width: 100%;
   overflow: hidden;
 }
-.level3, .level2, .level1 {
+.level2, .level1 {
   width: 6000px;
   height: 198px;
   background-repeat: repeat-x;
@@ -120,6 +134,32 @@ body {
   background-size: 600px 158px;
   height: 108px;
   animation-duration: 60s;
+}
+
+/* -------- Static Background for Mobile ----------- */
+
+.holder-static, .level2-static, .level1-static {
+  min-height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.holder-static {
+  width: 100%;
+  overflow: hidden;
+}
+.level2-static, .level1-static {
+  width: 100vw;
+  height: 198px;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: 600px 198px;
+}
+.level2-static {
+  background-image: url("../imgs/skyline2.png");
+}
+.level1-static {
+  background-image: url("../imgs/treeline-big.png");
+  background-size: 600px 158px;
 }
 
 /* =====================================================
@@ -245,6 +285,10 @@ body {
   }
   .navbar-default .navbar-brand {
     color: white;
+    padding-top: 10px;
+  }
+  .navbar-header {
+    background: #2E76B5;
   }
   .grid-item {
     width: 47%;
