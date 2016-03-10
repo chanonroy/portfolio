@@ -19,29 +19,26 @@ body {
   box-shadow: none;
 }
 .nav.navbar-nav.navbar-right li a {
-  color: white;
+  color: #eaeaea;
   font-size: 16px;
   font-weight: bold;
 }
 .nav.navbar-nav.navbar-right li a:hover {
-  color: #E3E7EB;
-}
-.navbar-default .navbar-brand {
   color: white;
   font-weight: bold;
+}
+.navbar-default .navbar-brand {
+  color: #eaeaea;
   padding-top: 16px;
   padding-bottom: 16px;
 }
-
 #brand {
   height: 30px;
   width: 30px;
   display: inline;
   margin-right: 10px;
   border-radius: 10px;
-
 }
-
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: white;
 }
@@ -49,7 +46,6 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
 }
@@ -79,7 +75,6 @@ body {
   visibility: hidden;
 }
 
-
 /* =====================================================
                     Front Page Items
 ====================================================== */
@@ -89,7 +84,6 @@ body {
   padding-top: 20vh;
   font-weight: bold;
 }
-
 #cover.jumbotron {
   margin-bottom: 0px;
   /* fixes jumbotron default margin on bottom */
@@ -138,6 +132,31 @@ body {
   animation-duration: 60s;
 }
 
+/* -------- Static Background for Mobile ----------- */
+
+.holder-static, .level2-static, .level1-static {
+  min-height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.holder-static {
+  width: 100%;
+  overflow: hidden;
+}
+.level2-static, .level1-static {
+  width: 100vw;
+  height: 198px;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: 600px 198px;
+}
+.level2-static {
+  background-image: url("../imgs/skyline2.png");
+}
+.level1-static {
+  background-image: url("../imgs/treeline-big.png");
+  background-size: 600px 158px;
+}
 
 /* =====================================================
                       My Skills
@@ -147,38 +166,39 @@ body {
   padding: 20px;
 }
 
-
 /* ===========================================================
                  Isotope.js custom (Portfolio)
  ========================================================== */
 
 .portfolioFilter a {
   margin-right: 10px;
-  color: #eaeaea;
+  color: #898989;
   text-decoration: none;
   font-size: 22px;
 }
 .portfolioFilter a:hover {
-  color: #a8a9a9;
+  color: white;
+  font-weight: bold;
 }
 .portfolioFilter a.current {
   font-weight: bold;
-  text-decoration: underline;
+  color: white;
 }
 .grid-item {
   width: 32%;
   margin: 5px;
 }
+
 /*.grid-shadow {
   -webkit-box-shadow: 7px 12px 23px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 7px 12px 23px -4px rgba(0, 0, 0, 0.75);
   box-shadow: 7px 12px 23px -4px rgba(0, 0, 0, 0.75);
 }*/
+
 .portfolioContainer {
   width: 100%;
   margin: auto;
 }
-
 #portfolio.container-fluid {
   /*background: #184458 url("/static/imgs/black-linen.png");*/
   background: #16294b;
@@ -188,46 +208,42 @@ body {
 /* ------------------- Portfolio Rollover ------------------ */
 
 .port-text {
- position: absolute;
- top:0;
- bottom: 0;
- left: 0;
- right: 0;
- text-align: center;
- padding: 10px;
- background: rgba(46, 117, 179, 0.95);
- color: #fff;
- visibility: hidden;
- opacity: 0;
-
- -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-     -ms-transition: all 0.5s ease;
-         transition: all 0.5s ease;
-
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 15px;
+  background: rgba(46, 117, 179, 0.95);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-size: 15px;
 }
 
-.port-text h4 h5 {
-  padding: 20px 20px 20px 20px;
+.button-space {
+  margin-bottom: 20px
 }
 
 .grid-item:hover .port-text {
   visibility: visible;
   opacity: 1;
 }
-
 .ghost-button {
-    color: white;
-    border: 1px solid white;
-    background: transparent;
-    padding: 10px 35px;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 15px;
-    margin-top: 5px;
+  color: white;
+  border: 1.5px solid white;
+  background: transparent;
+  padding: 5px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
 }
-
 .ghost-button:hover, .ghost-button:active {
   background: white;
   text-decoration: none;
@@ -240,7 +256,6 @@ body {
 .img-center {
   margin: auto;
   /* Centers an image */
-  padding: 5px;
 }
 #about {
   background-color: #4badf7;
@@ -268,20 +283,17 @@ body {
   background-color: #1d333a;
   padding: 15px;
 }
-
 #portfolio.container-fluid {
   /*background: #184458 url("/static/imgs/black-linen.png");*/
   background: #16294b;
   color: #eaeaea;
 }
-
 .social {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   -webkit-filter: grayscale(100%);
 }
-
 .on {
   -webkit-filter: none;
 }
@@ -290,13 +302,12 @@ body {
                         Media Queries
  ========================================================== */
 
- @media screen and (max-width: 992px) {
-   .grid-item {
-     width: 48%;
-     margin: 2px;
-   }
- }
-
+@media screen and (max-width: 992px) {
+  .grid-item {
+    width: 48%;
+    margin: 2px;
+  }
+}
 @media screen and (max-width: 767px) {
   /* ------- Nav Bar Fixes -------- */
   .navbar-fixed-top {
@@ -314,9 +325,20 @@ body {
   .navbar-header {
     background: #2E76B5;
   }
+  /* ------- Portfolio Fixes ---------*/
   .grid-item {
-    width: 47%;
+    width: 100%;
     margin: 4px;
+  }
+  .port-text {
+    font-size: 4vw;
+    /* 15px */
+    padding: 20px;
+  }
+  .ghost-button {
+    padding: 5px 30px;
+    font-size: 15px;
+    margin-top: 50px;
   }
 }
 
@@ -324,5 +346,17 @@ body {
   .grid-item {
     width: 100%;
     margin: 3px;
+  }
+  .port-text {
+    font-size: 3.5vw;
+    padding: 10px;
+  }
+  .ghost-button {
+    padding: 2px 15px;
+    font-size: 10px;
+    font-weight: none;
+  }
+  .button-space {
+    margin-bottom: 10px
   }
 }
