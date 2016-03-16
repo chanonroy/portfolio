@@ -187,6 +187,7 @@ body {
 .grid-item {
   width: 32%;
   margin: 5px;
+  border-radius: 2px;
 }
 
 /*.grid-shadow {

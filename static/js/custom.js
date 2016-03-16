@@ -71,7 +71,7 @@ setTimeout(function(){
         "<font color='#46c84d'>$</font> ^750 I'm a Web Developer and Programmer from Ottawa, Canada ^1000 <br> " +
         "<font color='#46c84d'>$</font> ^750 I love making beautiful programs and designs with code ^750 <br> " +
         "<font color='#46c84d'>$</font> In 2006, ^500 I was named TIME Magazine's Person of the Year ^750 <br> " +
-        "<font color='#46c84d'>$</font> My actual typing speed is similar to this ^750 <br> " +
+        "<font color='#46c84d'>$</font> My actual typing speed is much faster than this ^750 <br> " +
         "<font color='#46c84d'>$</font> ^750 Use the navigation above or scroll down to see more  ^750" ],
         typeSpeed: 25,               // sets the typing speed, default = 0
         loop: false,                // loop (True/False)
