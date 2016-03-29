@@ -1,3 +1,35 @@
+// --------------------- Typed.js --------------------------------------
+
+// get the day of the week
+var d = new Date();
+var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var day = weekday[d.getDay()];
+
+// get the hour in the day
+var hour = d.getHours();
+var greeting;
+  if (hour < 12) {
+      greeting = "morning";
+  } else if (hour < 17) {
+      greeting = "afternoon";
+  } else if (hour < 21){
+      greeting = "evening";
+  } else {
+      greeting = "night";
+  }
+
+setTimeout(function(){
+    $("#typed").typed({
+        strings: ["^1000 Hello there!^1000<br>" +
+        " ^750 My name is Chanon Roy^750<br>" +
+        " ^750 I'm a Web Developer and Programmer <br> from Ottawa, Canada<br> <br> ^1000" +
+        " ^750 Make sure to check out my portfolio projects and GitHub code ^750<br>" +
+        " ^1000 Have a wonderful " + day + " " + greeting + "!"],
+        typeSpeed: 35,               // sets the typing speed, default = 0
+        loop: false,                // loop (True/False)
+    });
+}, 1000);
+
 // ------------------ Nav Bar Fix After Scroll -------------------------
 
 $(window).scroll(function() {
@@ -61,22 +93,6 @@ $(window).load(function(){
         return false;
     });
 });
-
-// --------------------- Typed.js --------------------------------------
-
-setTimeout(function(){
-    $("#typed").typed({
-        strings: ["<font color='#46c84d'>$</font> ^1000 Hello ^1000 <br> " +
-        "<font color='#46c84d'>$</font> My name is Chanon Roy^1000 <br> " +
-        "<font color='#46c84d'>$</font> ^750 I'm a Web Developer and Programmer from Ottawa, Canada ^1000 <br> " +
-        "<font color='#46c84d'>$</font> ^750 I love making beautiful programs and designs with code ^750 <br> " +
-        "<font color='#46c84d'>$</font> In 2006, ^500 I was named TIME Magazine's Person of the Year ^750 <br> " +
-        "<font color='#46c84d'>$</font> My actual typing speed is much faster than this ^750 <br> " +
-        "<font color='#46c84d'>$</font> ^750 Use the navigation above or scroll down to see more  ^750" ],
-        typeSpeed: 25,               // sets the typing speed, default = 0
-        loop: false,                // loop (True/False)
-    });
-}, 1000);
 
 // ----------------------- Social Media Buttons ------------------------
 
