@@ -84,6 +84,36 @@ body {
   padding-top: 20vh;
   font-weight: bold;
 }
+
+.type-jumbo {
+  text-align: center;
+  padding-top: 10vh;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
 #cover.jumbotron {
   margin-bottom: 0px;
   /* fixes jumbotron default margin on bottom */
@@ -200,6 +230,7 @@ body {
   width: 100%;
   margin: auto;
 }
+
 #portfolio.container-fluid {
   /*background: #184458 url("/static/imgs/black-linen.png");*/
   background: #16294b;

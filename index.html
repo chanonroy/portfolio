@@ -10,14 +10,12 @@
 
   <!-- Bootstrap Official CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"> -->
-
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
-
   <!-- Custom CSS Styles -->
   <link rel="stylesheet" type="text/css" href="static/css/custom.css" />
-  <link rel="stylesheet" type="text/css" href="static/css/terminal.css" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Chanon Roy">
@@ -61,7 +59,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#1"><img src="static/imgs/roy.jpg" id="brand"  alt="Chanon Roy"><strong>Chanon Roy</strong></a>
+        <a class="navbar-brand" href="#1"><img src="static/imgs/roy.jpg" id="brand" alt="Chanon Roy"><strong>Chanon Roy</strong></a>
       </div>
 
       <!-- Menu Items -->
@@ -85,31 +83,23 @@
   <!-- Jumbotron -->
   <section id="1" class="navfix">
     <div id="cover" class="jumbotron">
+      <div class="type-jumbo hidden-xs">
+        <span id="typed" class="typed"></span>
+      </div>
       <div id="opening" class="visible-xs">
         <h1> <b> Hello </b> </h1>
         <h2> My name is Chanon </h2>
         <h4> I'm a Web Developer and Programmer <br> from Ottawa, Canada </h4>
       </div>
-      <div id="terminal" class="hidden-xs">    <!-- Hides Terminal on Mobile -->
-        <div id="header">
-          <div class="dot red"></div>
-          <div class="dot yellow"></div>
-          <div class="dot green"></div>
-        </div>
-        <div class="panel">
-          <div class="action">
-            <p><span id="typed" class="typed"></span></p>
-          </div>
-        </div>
-      </div>
-      <div class="holder hidden-xs">                      <!-- hidden-xs, if need to hide on mobile -->
-        <div class="level2"></div>
-        <div class="level1"></div>
-      </div>
-      <div class="holder-static visible-xs">       fixed background (for mobile)
-        <div class="level2-static"></div>
-        <div class="level1-static"></div>
-      </div>
+    </div>
+    <div class="holder hidden-xs">
+      <!-- hidden-xs, if need to hide on mobile -->
+      <div class="level2"></div>
+      <div class="level1"></div>
+    </div>
+    <div class="holder-static visible-xs">
+      <div class="level2-static"></div>
+      <div class="level1-static"></div>
     </div>
   </section>
 
@@ -126,23 +116,24 @@
         <br>
         <div class="row text-center">
           <div class="col-lg-3 col-sm-6 col-xs-12">
-            <img src="static/imgs/dev.png" style="width:80px; height:80px"  alt="Front-End">
+            <img src="static/imgs/dev.png" style="width:80px; height:80px" alt="Front-End">
             <h3> Front-End </h3>
             <p> HTML5, CSS3, Bootstrap, JavaScript, jQuery, Build Tools </p>
           </div>
           <div class="col-lg-3 col-sm-6 col-xs-12">
-            <img src="static/imgs/back.png" style="width:80px; height:80px"  alt="Back-End">
+            <img src="static/imgs/back.png" style="width:80px; height:80px" alt="Back-End">
             <h3> Back-End </h3>
             <p> Python, SQL, APIs, RESTful Services </p>
           </div>
-          <div class="clearfix visible-xs"></div> <!-- Clearfix on mobile -->
+          <div class="clearfix visible-xs"></div>
+          <!-- Clearfix on mobile -->
           <div class="col-lg-3 col-sm-6 col-xs-12 ">
             <img src="static/imgs/ops.png" style="width:80px; height:80px" alt="Dev Tools">
             <h3> Dev Tools </h3>
             <p> Git VCS, Command Line, Unit Testing, Deployment </p>
           </div>
           <div class="col-lg-3 col-sm-6 col-xs-12">
-            <img src="static/imgs/cam.png" style="width:80px; height:80px" alt="Other Skills" >
+            <img src="static/imgs/cam.png" style="width:80px; height:80px" alt="Other Skills">
             <h3> Other </h3>
             <p> Multimedia, Analytics, SEO, Web Writing </p>
           </div>
@@ -177,9 +168,10 @@
               <div class="port-text">
                 <p><strong> Critics and Flicks (2016) </strong></p>
                 <p> Guess the movie by reading the reviews </p>
-                <p> Made with Python, Flask, PostgreSQL </p>
+                <p> Made with Python, Django, PostgreSQL </p>
                 <p class="button-space"> <i> Lead Developer </i> </p>
-                <a href="#3" class="ghost-button">Coming Soon</a>      <!-- should get rid of BRs -->
+                <a href="#3" class="ghost-button">Coming Soon</a>
+                <!-- should get rid of BRs -->
               </div>
             </div>
             <div class="grid-item graphics static">
