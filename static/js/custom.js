@@ -18,14 +18,25 @@ var greeting;
       greeting = "night";
   }
 
+var n = Math.floor(Math.random()* 7 + 0); // max, start
+var facts = ["I was TIME Magazine's Person of the Year in 2006",
+             "I do a world-class impersonation of Yoda",
+             "My full name is unreasonably long",
+             "I know numerous people who have appeared in Google Street View",
+             "I once sang the Canadian national anthem for 500+ Bhutanese school children",
+             "I once saw Nickelback in concert and unironically enjoyed every moment of it",
+             "I'm fairly certain that I'm the only 'Chanon Roy' on the planet"];
+
 setTimeout(function(){
     $("#typed").typed({
-        strings: ["^1000 Hello there!^1000<br>" +
+        strings: ["^1000 <font size='15px'> Hello</font> ^1000<br>" +
         " ^750 My name is Chanon Roy^750<br>" +
         " ^750 I'm a Web Developer and Programmer <br> from Ottawa, Canada<br> <br> ^1000" +
-        " ^750 Make sure to check out my portfolio projects and GitHub code ^750<br>" +
-        " ^1000 Have a wonderful " + day + " " + greeting + "!"],
-        typeSpeed: 35,               // sets the typing speed, default = 0
+        " ^750 Check out my portfolio projects and code on Github ^750<br>" +
+        " ^750 Have a wonderful " + day + " " + greeting + "! ^750 <br> <br>" +
+        " ^750 <font size='6px'> More about me: </font> ^750<br>" +
+        " ^750 <font size='5px' color='gold'>" + facts[n] + "</font>"],
+        typeSpeed: 25,               // sets the typing speed, default = 0
         loop: false,                // loop (True/False)
     });
 }, 1000);
