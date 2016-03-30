@@ -31,7 +31,7 @@ setTimeout(function(){
     $("#typed").typed({
         strings: ["^1000 <font size='15px'> Hello</font> ^1000<br>" +
         " ^750 My name is Chanon Roy^750<br>" +
-        " ^750 I'm a Web Developer and Programmer <br> from Ottawa, Canada<br> <br> ^1000" +
+        " ^750 I'm a Web Developer and Programmer <br> from Ottawa, Canada ^1000 <br> <br>" +
         " ^750 Check out my portfolio projects and code on Github ^750<br>" +
         " ^750 Have a wonderful " + day + " " + greeting + "! ^750 <br> <br>" +
         " ^750 <font size='6px'> More about me: </font> ^750<br>" +
