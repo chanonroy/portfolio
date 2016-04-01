@@ -1,0 +1,15 @@
+/* bootstrap serves as normalize.css */
+@import "mixins";
+@import "navigation";
+@import "jumbotron";
+@import "portfolio";
+@import "about";
+@import "footer";
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.group { /* items in row will have margin on top */
+  margin-top: 15px;
+}

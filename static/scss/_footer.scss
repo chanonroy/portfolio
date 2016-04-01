@@ -1,0 +1,20 @@
+$contact-background: #1d333a;
+
+#Contact.container-fluid {
+  color: #eaeaea;
+  background-color: $contact-background;
+  padding: 15px;
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.on {
+  -webkit-filter: none;
+  filter: none;
+}

@@ -1,0 +1,120 @@
+/* ---------- Opening Text Style ------ */
+
+#opening {
+  text-align: center;
+  padding-top: 20vh;
+  font-weight: bold;
+}
+
+/* ---------- Typed.js Animations ------ */
+.type-jumbo {
+  text-align: center;
+  padding-top: 15vh;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* ------- Jumbotron Background ------- */
+
+#cover.jumbotron {
+  background: #1e5799;
+  background: -moz-linear-gradient(top, #1e5799 9%, #2989d8 69%, #7db9e8 100%);
+  background: -webkit-linear-gradient(top, #1e5799 9%, #2989d8 69%, #7db9e8 100%);
+  background: linear-gradient(to bottom, #1e5799 9%, #2989d8 69%, #7db9e8 100%);
+  color: #eaeaea;
+  height: 100vh;
+  /* sets height of jumbo to 100% of view */
+}
+
+/* ---- Animation (slides to left) ------- */
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-800px, 0, 0);
+  }
+}
+
+.holder, .level2, .level1 {
+  min-height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.holder {
+  width: 100%;
+  overflow: hidden;
+}
+.level2, .level1 {
+  width: 6000px;
+  height: 198px;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: 600px 198px;
+  animation: slide linear infinite;
+}
+.level2 {
+  background-image: url("../imgs/skyline2.png");
+  animation-duration: 90s;
+}
+.level1 {
+  background-image: url("../imgs/treeline-big.png");
+  background-size: 600px 158px;
+  height: 108px;
+  animation-duration: 60s;
+}
+
+/* -------- Static Background for Mobile ----------- */
+
+.holder-static, .level2-static, .level1-static {
+  min-height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.holder-static {
+  width: 100%;
+  overflow: hidden;
+}
+.level2-static, .level1-static {
+  width: 100vw;
+  height: 198px;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: 600px 198px;
+}
+.level2-static {
+  background-image: url("../imgs/skyline2.png");
+}
+.level1-static {
+  background-image: url("../imgs/treeline-big.png");
+  background-size: 600px 158px;
+}
+
+/* ------- My Skills ------------ */
+
+#skills-inner.container {
+  padding: 20px;
+}

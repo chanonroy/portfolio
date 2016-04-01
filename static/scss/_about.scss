@@ -1,0 +1,29 @@
+$text-color: white; /* for coloured backgrounds */
+$alt-text-color: lighten(black, 10%); /* for plain backgrounds */
+
+#about {
+  background-color: #4badf7;
+  padding: 45px;
+  color: $text-color;
+}
+#education {
+  @extend #about;
+  background-color: #4e2d82;
+  .img-center {
+    margin: auto;
+  }
+}
+#work {
+  @extend #about;
+  background-color: #262627;
+}
+
+#courses {
+  @extend #about;
+  background-color: transparent;
+  color: $alt-text-color;
+}
+
+#other {
+  @extend #courses;
+}

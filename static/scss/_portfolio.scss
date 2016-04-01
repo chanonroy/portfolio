@@ -1,0 +1,111 @@
+/* ------------------- Isotope.js Portfolio ------------------ */
+
+.portfolioFilter { /* the icons for the filter */
+  a {
+  margin-right: 10px;
+  color: #898989;
+  text-decoration: none;
+  font-size: 22px;
+  @include transition(all 0.3s ease);
+  }
+  a:hover {
+    color: white;
+    font-weight: bold;
+  }
+  a.current {
+    @extend a:hover;
+  }
+}
+
+.portfolioContainer { /* items in the portfolio container are centered */
+  width: 100%;
+  margin: auto;
+}
+
+#portfolio.container-fluid { /* background of the portfolio container */
+  background: #16294b;
+  color: #eaeaea;
+}
+
+.grid-item { /* determines SIZE and FIT of portfolio items */
+  width: 32%;
+  margin: 5px;
+  > img {
+    @include border-radius(7px);
+  }
+  @media screen and (max-width: 992px) {
+    width: 48%;
+    margin: 2px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin: 4px;
+  }
+  @media screen and (max-width: 479px) {
+    width: 100%;
+    margin: 3px;
+  }
+}
+
+/* ------------------- Portfolio Rollover ------------------ */
+
+.port-text {  /* rollover slide for the portfolio items */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 15px;
+  background: rgba(46, 117, 179, 0.95);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  @include transition(all 0.5s ease);
+  @include border-radius(7px);
+  font-size: 15px;
+  @media screen and (max-width: 767px) {
+    font-size: 4vw;
+    padding: 20px;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 3.5vw;
+    padding: 10px;
+  }
+}
+
+.button-space { /* gap between button and text */
+  margin-bottom: 20px;
+  @media screen and (max-width: 479px) {
+    margin-bottom: 10px
+  }
+}
+
+.grid-item:hover .port-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ghost-button { /* ghost button to take you to portfolio item */
+  color: white;
+  border: 1.5px solid white;
+  background: transparent;
+  padding: 5px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  @media screen and (max-width: 767px) {
+    padding: 5px 30px;
+    font-size: 15px;
+    margin-top: 50px;
+  }
+  @media screen and (max-width: 479px) {
+    padding: 2px 15px;
+    font-size: 10px;
+    font-weight: none;
+  }
+}
+.ghost-button:hover, .ghost-button:active {
+  background: white;
+  text-decoration: none;
+}
