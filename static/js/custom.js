@@ -104,9 +104,3 @@ $(window).load(function(){
         return false;
     });
 });
-
-// ----------------------- Social Media Buttons ------------------------
-
-$(".social").hover(function () {
-    $(this).toggleClass("on");
-});
