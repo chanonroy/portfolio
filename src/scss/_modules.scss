@@ -1,0 +1,92 @@
+.panel {
+  padding: 100px 0 0 0;
+
+  @media screen and (max-width: 768px) {
+    padding: 75px 0 0 0;
+  }
+
+  &--bottom {
+    background-color: lighten(lightgrey, 7%); // #8dc496
+    padding: 50px 0 0 0;
+    img { margin-bottom: -5px; }
+    @media screen and (max-width: 995px) {
+      .el-col:nth-child(1) {
+        display: none;
+      }
+      padding: 25px;
+    }
+  }
+
+  &--contact {
+    margin-top: 50px;
+    padding: 100px 0 0 0;
+    color: white;
+    background-color: #3E5675;
+    p {
+      font-size: 1.2em;
+      color: lightgrey;
+    }
+    img {
+      margin-top: 5px;
+      height: 250px;
+      @media screen and (max-width: 768px) {
+        margin-bottom: -25px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-top: 150px;
+    }
+  }
+
+  &--footer {
+    margin-top: 150px;
+    padding: 25px 0;
+    background-color: $color-font;
+    color: $color-soft-grey;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      margin-top: 50px;
+    }
+  }
+}
+
+.building {
+  position: absolute;
+  bottom: 0;
+  height: 300px;
+}
+
+.skills {
+  &__icon {
+    height: 100px;
+  }
+  &__label {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+}
+
+.contact {
+  overflow: hidden;
+  &__text {
+    margin-bottom: 100px;
+    i:nth-child(2) { margin-left: 15px; }
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 0.9em;
+      margin-bottom: 50px;
+    }
+  }
+  &__photo {
+    display: flex;
+    justify-content: flex-end;
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
+  }
+}
