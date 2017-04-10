@@ -6,6 +6,11 @@ $transition-custom: all 0.3s ease;
 $color-font: #384047;
 $color-soft-grey: #999;
 
+html,
+body {
+    height: 100%;
+}
+
 body {
   margin: 0;
   color: $color-font;
