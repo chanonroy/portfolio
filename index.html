@@ -6,7 +6,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="icon" type="image/png" href="dist/assets/roy.png" />
      <title> Chanon Roy </title>
-     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
+     <link rel="stylesheet" href="vendor/elementui/index.css">
      <link rel="stylesheet" type="text/css" href="dist/css/main.css">
 
      <meta name="description" content="Hello, I'm Chanon - an enthusiastic web developer with a passion for building incredible products and user experiences">
@@ -85,7 +85,7 @@
 
            <el-row>
              <el-col :md="8">
-               <img class="skills__icon" src="dist/assets/layers.svg" alt="">
+               <img class="skills__icon" src="dist/assets/layers.svg" alt="UX-photo">
                <div class="skills__label"> Design/UX </div>
                <div class="text-muted"> Adobe Suite, Sketch </div>
                <div class="text-muted"> Product Strategy and Research </div>
@@ -93,7 +93,7 @@
                <div class="text-muted"> Testing and Iteration </div>
              </el-col>
              <el-col :md="8">
-               <img class="skills__icon" src="dist/assets/browser.svg" alt="" style="border-radius: 5px;">
+               <img class="skills__icon" src="dist/assets/browser.svg" alt="Front-End" style="border-radius: 5px;">
                <div class="skills__label"> Front-End </div>
                <div class="text-muted"> Responsive Design </div>
                <div class="text-muted"> Dev Tooling (Gulp, Webpack) </div>
@@ -101,7 +101,7 @@
                <div class="text-muted"> Intermediate JavaScript (ES6, Vue, D3) </div>
              </el-col>
              <el-col :md="8">
-               <img class="skills__icon" src="dist/assets/database.svg" alt="">
+               <img class="skills__icon" src="dist/assets/database.svg" alt="Database Photo">
                <div class="skills__label"> Back-End </div>
                <div class="text-muted"> Django, Express.js </div>
                <div class="text-muted"> REST API and Web Services </div>
@@ -113,6 +113,7 @@
          </div>
        </div>
 
+
        <div class="panel panel--contact">
         <div class="container contact">
 
@@ -123,7 +124,7 @@
               <p> <i class="fa fa-envelope fa-fw" aria-hidden="true"></i> chanonroy@gmail.com </p>
             </el-col>
             <el-col :lg="12" :xs="24" class="contact__photo">
-              <img v-cloak src="dist/assets/drinks.svg" alt="">
+              <img v-cloak src="dist/assets/drinks.svg" alt="drink">
             </el-col>
           </el-row>
 
@@ -136,22 +137,22 @@
 
            <el-row :gutter="10">
              <el-col :lg="6" :sm="12">
-               <img class="skills__icon" src="dist/assets/game-controller.svg" alt="">
+               <img class="skills__icon" src="dist/assets/game-controller.svg" alt="controller">
                <div class="skills__label"> Gaming </div>
                <div class="text-muted"> Exploring immersive worlds </div>
              </el-col>
              <el-col :lg="6" :sm="12">
-               <img class="skills__icon" src="dist/assets/dish.svg" alt="" style="border-radius: 5px;">
+               <img class="skills__icon" src="dist/assets/dish.svg" alt="dish" style="border-radius: 5px;">
                <div class="skills__label"> Cooking </div>
                <div class="text-muted"> Making delicious meals </div>
              </el-col>
              <el-col :lg="6" :sm="12">
-               <img class="skills__icon" src="dist/assets/tickets.svg" alt="">
+               <img class="skills__icon" src="dist/assets/tickets.svg" alt="tickets">
                <div class="skills__label"> Watching Films </div>
                <div class="text-muted"> Appreciating great storytelling </div>
              </el-col>
              <el-col :lg="6" :sm="12">
-               <img class="skills__icon" src="dist/assets/taoism.svg" alt="">
+               <img class="skills__icon" src="dist/assets/taoism.svg" alt="philosophy">
                <div class="skills__label"> Philosophy </div>
                <div class="text-muted"> Pondering big questions </div>
              </el-col>
@@ -175,8 +176,8 @@
 
      </div> <!-- #app -->
 
-     <script src="https://unpkg.com/vue@2.2.6/dist/vue.min.js"></script>
-     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+     <script src="vendor/vue/vue.min.js"></script>
+     <script src="vendor/elementui/index.js"></script>
      <script src="dist/js/main.js"></script>
    </body>
  </html>
