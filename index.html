@@ -9,7 +9,7 @@
      <link rel="stylesheet" href="vendor/elementui/index.css">
      <link rel="stylesheet" type="text/css" href="dist/css/main.css">
 
-     <meta name="description" content="Hello, I'm Chanon - an enthusiastic web developer with a passion for building incredible products and user experiences">
+     <meta name="description" content="Hello, I'm Chanon - an enthusiastic web developer with a passion for building incredible products and user experiences. While I specialize in modern JavaScript (ES6, React, Vue) and CSS (SCSS), I also have experience with Python, Django, Node, and data visualization (D3).">
      <meta name="robots" content="index, follow">
      <meta name="author" content="Chanon Roy">
 
@@ -18,7 +18,7 @@
      <meta property="og:type" content="website" />
      <meta property="og:url" content="http://chanonroy.com/" />
      <meta property="og:image" content="http://chanonroy.com/dist/assets/roy.png">
-     <meta property="og:description" content="Hello, I'm Chanon - an enthusiastic web developer with a passion for building incredible products and user experiences" />
+     <meta property="og:description" content="Hello, I'm Chanon - an enthusiastic web developer with a passion for building incredible products and user experiences. While I specialize in modern JavaScript (ES6, React, Vue) and CSS (SCSS), I also have experience with Python, Django, Node, and data visualization (D3)." />
 
      <!-- Google Analytics -->
     <script>
@@ -99,7 +99,7 @@
                <div class="text-muted"> Responsive Design </div>
                <div class="text-muted"> Dev Tooling (Gulp, Webpack) </div>
                <div class="text-muted"> Scalable CSS (SCSS, BEM) </div>
-               <div class="text-muted"> Intermediate JavaScript (ES6, Vue, D3) </div>
+               <div class="text-muted"> JavaScript Expertise (ES6, Vue, D3) </div>
              </el-col>
              <el-col :md="8">
                <img class="skills__icon" src="dist/assets/database.svg" alt="Database Photo">
@@ -137,38 +137,9 @@
            <h1> Some of my hobbies &amp; interests </h1>
 
            <el-row :gutter="10">
-             <el-col :lg="6" :sm="12" :xs="12">
-               <img class="skills__icon" src="dist/assets/game-controller.svg" alt="controller">
-               <div class="skills__label"> Gaming </div>
-             </el-col>
-             <el-col :lg="6" :sm="12" :xs="12">
-               <img class="skills__icon" src="dist/assets/dish.svg" alt="dish" style="border-radius: 5px;">
-               <div class="skills__label"> Cooking </div>
-             </el-col>
-             <el-col :lg="6" :sm="12" :xs="12">
-               <img class="skills__icon" src="dist/assets/tickets.svg" alt="tickets">
-               <div class="skills__label"> Classic Films </div>
-             </el-col>
-             <el-col :lg="6" :sm="12" :xs="12">
-               <img class="skills__icon" src="dist/assets/globe.svg" alt="philosophy">
-               <div class="skills__label"> Languages </div>
-             </el-col>
-
-             <el-col :lg="6" :sm="12" :xs="12">
-               <img class="skills__icon" src="dist/assets/graph.svg" alt="philosophy">
-               <div class="skills__label"> Finance </div>
-             </el-col>
-             <el-col :lg="6" :sm="12" :xs="12">
-               <img class="skills__icon" src="dist/assets/george.svg" alt="philosophy">
-               <div class="skills__label"> World History </div>
-             </el-col>
-             <el-col :lg="6" :sm="12" :xs="12">
-               <img class="skills__icon" src="dist/assets/taoism.svg" alt="philosophy">
-               <div class="skills__label"> Philosophy </div>
-             </el-col>
-             <el-col :lg="6" :sm="12" :xs="12">
-               <img class="skills__icon" src="dist/assets/bars.svg" alt="philosophy">
-               <div class="skills__label"> Data </div>
+             <el-col v-for="interest in interests" :lg="6" :sm="12" :xs="12">
+               <img class="skills__icon" :src="'dist/assets/' + interest.photo + '.svg'" alt="interest.photo">
+               <div class="skills__label"> {{ interest.name }} </div>
              </el-col>
            </el-row>
 

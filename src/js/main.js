@@ -1,7 +1,16 @@
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue!'
+    interests: [
+      { name: 'Gaming', photo: 'game-controller' },
+      { name: 'Cooking', photo: 'dish' },
+      { name: 'Classic Films', photo: 'tickets' },
+      { name: 'Languages', photo: 'globe' },
+      { name: 'Finance', photo: 'graph' },
+      { name: 'World History ', photo: 'george' },
+      { name: 'Philosophy', photo: 'taoism' },
+      { name: 'Data', photo: 'bars' },
+    ]
   },
   computed: {
     time_greeting () {
