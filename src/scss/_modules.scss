@@ -49,6 +49,13 @@
     }
   }
 
+  &--projects {
+    img {
+      height: 200px;
+      border-radius: 5px;
+    }
+  }
+
   &--footer {
     margin-top: 150px;
     padding: 25px 0;
