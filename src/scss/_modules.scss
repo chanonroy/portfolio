@@ -53,6 +53,16 @@
     img {
       height: 200px;
       border-radius: 5px;
+      transition: all 0.5s ease;
+
+      &:hover {
+        opacity: 0.85;
+        filter: alpha(opacity=50); /* For IE8 and earlier */
+      }
+
+      @media screen and (max-width: 1200px) {
+        height: 175px;
+      }
     }
   }
 
