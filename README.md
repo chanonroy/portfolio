@@ -1,3 +1,14 @@
+<p align="center">
+  <img alt="Gatsby" src="./src/images/roy.png" width="60" />
+</p>
+<h1 align="center">
+  My portfolio website
+</h1>
+
+<p align="center">
+  This is version 2.0 of my portfolio site that is spun up using Gatsby.
+</p>
+
 ## 📦 Project Setup
 
 1.  **Install dependencies**
