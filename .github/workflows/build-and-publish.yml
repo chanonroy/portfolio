@@ -1,12 +1,10 @@
 name: build-and-publish
 
-# on:
-#   push:
-#     branches:
-#       # Workflow should only run on merge to develop
-#       - develop
-
-on: [push]
+on:
+  push:
+    branches:
+      # Workflow should only run on merge to develop
+      - develop
 
 jobs:
   build-and-publish:
