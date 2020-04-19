@@ -30,8 +30,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Install Dependencies
-        run: yarn install
+      - name: Install and Build
+        run: |
+          yarn install
+          yarn build
 
-      - name: Build and Publish
-        run: yarn deploy
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: master # The branch the action should deploy to.
+          FOLDER: public # The folder the action should deploy.
