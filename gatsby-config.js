@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Chanon Roy`,
+    description: `Chanon Roy, a software developer from Canada`,
     author: `@chanonroy`,
   },
   plugins: [
@@ -63,8 +63,8 @@ module.exports = {
         name: `chanon-roy-portfolio`,
         short_name: `chanon`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#1e5799`,
+        theme_color: `#1e5799`,
         display: `minimal-ui`,
         icon: `src/images/roy.png`, // This path is relative to the root of the site.
       },
