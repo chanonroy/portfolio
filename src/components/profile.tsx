@@ -18,6 +18,10 @@ const ProfileContainer = styled(Container)`
     grid-template-columns: 1fr;
     padding: ${({ theme }) => `${theme.spacing.sm}px`};
   }
+
+  @media (max-width: ${({ theme }) => `${theme.breakpoints.xs}px`}) {
+    padding: ${({ theme }) => `${theme.spacing.xs}px`};
+  }
 `;
 
 const MutedText = styled.p`
@@ -50,8 +54,11 @@ const Profile = () => {
           <h1> {greetingText} </h1>
           <MutedText>
             Thank you for making my website an exciting stop on your current
-            internet browsing journey. Get ready to learn a bit more about me
-            and some of the exciting things that I have been working on.
+            internet browsing journey.
+          </MutedText>
+          <MutedText>
+            Learn a little bit more about me and some of the exciting things
+            that I have been working on.
           </MutedText>
         </div>
       </ProfileContainer>
