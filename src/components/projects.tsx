@@ -27,8 +27,8 @@ const Grid = styled.div`
   }
 
   @media (max-width: ${({ theme }) => `${theme.breakpoints.xs}px`}) {
-    grid-template-columns: 1fr;
-    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
   }
 `;
 
@@ -52,6 +52,23 @@ const GridItem = styled.div`
   p {
     margin: 8px 0;
     color: grey;
+  }
+
+  @media (max-width: ${({ theme }) => `${theme.breakpoints.xs}px`}) {
+    margin-bottom: 0px;
+
+    div {
+      display: none;
+      font-size: 0.9em;
+    }
+    img {
+      margin-bottom: 4px;
+    }
+    p {
+      display: none;
+      margin: 0;
+      font-size: 0.7em;
+    }
   }
 `;
 

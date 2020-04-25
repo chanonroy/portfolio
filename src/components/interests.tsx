@@ -70,11 +70,12 @@ const Grid = styled.div`
   grid-column-gap: 80px;
 
   @media (max-width: ${({ theme }) => `${theme.breakpoints.sm}px`}) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
   }
 
   @media (max-width: ${({ theme }) => `${theme.breakpoints.xs}px`}) {
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: none;
   }
 `;
@@ -90,6 +91,18 @@ const GridItem = styled.div`
   img {
     width: 100px;
     margin-bottom: 20px;
+  }
+
+  @media (max-width: ${({ theme }) => `${theme.breakpoints.sm}px`}) {
+    margin-bottom: 40px;
+
+    div {
+      font-size: 1em;
+    }
+    img {
+      width: 50px;
+      margin-bottom: 0px;
+    }
   }
 `;
 

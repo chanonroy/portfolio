@@ -6,6 +6,7 @@ const Title = styled.h1`
 
   @media (max-width: ${({ theme }) => `${theme.breakpoints.sm}px`}) {
     margin-bottom: ${({ theme }) => `${theme.spacing.sm}px`};
+    font-size: 1.7em;
   }
 `;
 
