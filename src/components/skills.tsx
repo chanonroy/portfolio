@@ -68,12 +68,8 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
-  @media (max-width: ${({ theme }) => `${theme.breakpoints.sm}px`}) {
-    grid-template-columns: 1fr 1fr;
-  }
-
   @media (max-width: ${({ theme }) => `${theme.breakpoints.xs}px`}) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 `;
 
@@ -81,23 +77,37 @@ const Item = styled.div`
   text-align: center;
   margin-bottom: 80px;
 
+  img {
+    width: 100px;
+  }
+
+  h2 {
+    margin: 20px 0;
+  }
+
+  h4 {
+    color: grey;
+    font-weight: 400;
+    margin: 0;
+  }
+
   @media (max-width: ${({ theme }) => `${theme.breakpoints.sm}px`}) {
     margin-bottom: ${({ theme }) => `${theme.spacing.sm}px`};
+
+    img {
+      width: 75px;
+    }
+
+    h2 {
+      font-size: 0.9em;
+      margin: 10px 0;
+    }
+
+    h4 {
+      font-size: 0.7em;
+      margin: 0;
+    }
   }
-`;
-
-const Image = styled.img`
-  width: 100px;
-`;
-
-const Subtitle = styled.h2`
-  margin: 20px 0;
-`;
-
-const Text = styled.h4`
-  color: grey;
-  font-weight: 400;
-  margin: 0;
 `;
 
 const Skills = () => {
@@ -108,10 +118,10 @@ const Skills = () => {
         <Grid>
           {skills.map((skill, i) => (
             <Item key={`${i}-${skill.title}`}>
-              <Image src={skill.img} alt={skill.title} />
-              <Subtitle> {skill.title} </Subtitle>
+              <img src={skill.img} alt={skill.title} />
+              <h2> {skill.title} </h2>
               {skill.subItems.map((item) => (
-                <Text key={item}> {item} </Text>
+                <h4 key={item}> {item} </h4>
               ))}
             </Item>
           ))}
