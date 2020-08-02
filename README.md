@@ -37,4 +37,4 @@
 
 ## 🚀 Deployment
 
-The code for this project is deployed using Vercel. Deployed from master
+The code for this project is deployed using Vercel. Deployed from master.
