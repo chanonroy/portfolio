@@ -77,8 +77,8 @@ const projects = [
     img: snakesImg,
     alt: 'snakes',
     description: 'An implementation of the classic game',
-    subtitle: 'React, HTML Canvas, Firebase',
-    url: 'https://react-snake.firebaseapp.com/',
+    subtitle: 'React, HTML Canvas, Next.js',
+    url: 'https://roy-react-snake.vercel.app/',
   },
   {
     img: dogsImg,
