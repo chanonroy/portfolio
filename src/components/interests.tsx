@@ -9,7 +9,7 @@ import globeImg from '../images/globe.svg';
 import graphImg from '../images/graph.svg';
 import georgeImg from '../images/george.svg';
 import taoismImg from '../images/taoism.svg';
-import barsImg from '../images/bars.svg';
+import guitarImg from '../images/guitar.svg';
 import Title from './shared/title';
 
 const interests = [
@@ -24,7 +24,7 @@ const interests = [
     alt: 'chicken',
   },
   {
-    title: 'Classic Films',
+    title: 'Great Films',
     img: ticketsImg,
     alt: 'tickets',
   },
@@ -49,8 +49,8 @@ const interests = [
     alt: 'ying-yang',
   },
   {
-    title: 'Data',
-    img: barsImg,
+    title: 'Classical Guitar',
+    img: guitarImg,
     alt: 'graph',
   },
 ];
