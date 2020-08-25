@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import Container from './shared/container';
 
 import snakesImg from '../images/snake.jpg';
-import dogsImg from '../images/dogs.png';
 import rebalanceImg from '../images/rebalance.jpg';
+import catDogImg from '../images/catdog.jpg';
 import Title from './shared/title';
 
 const ProjectSection = styled.div`
@@ -81,12 +81,11 @@ const projects = [
     url: 'https://roy-react-snake.vercel.app/',
   },
   {
-    img: dogsImg,
-    alt: 'dogs',
-    description: 'Dog breed image classification',
+    img: catDogImg,
+    alt: 'cats and dogs',
+    description: 'Cat vs. Dog image classification',
     subtitle: 'Tensorflow, Keras, Jupyter Notebook',
-    url:
-      'https://github.com/chanonroy/keras-dog-classifier/blob/master/train/predict.ipynb',
+    url: 'https://www.kaggle.com/chanonroy/cat-dog-ml-basic',
   },
   {
     img: rebalanceImg,
