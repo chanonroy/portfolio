@@ -4,6 +4,7 @@ import Container from './shared/container';
 
 import snakesImg from '../images/snake.jpg';
 import rebalanceImg from '../images/rebalance.jpg';
+import raycasterImg from '../images/raycaster.jpg';
 import catDogImg from '../images/catdog.jpg';
 import Title from './shared/title';
 
@@ -93,6 +94,13 @@ const projects = [
     description: 'Rebalance your investing portfolio',
     subtitle: 'React, Webpack, JavaScript',
     url: 'https://github.com/chanonroy/portfolio-rebalancer',
+  },
+  {
+    img: raycasterImg,
+    alt: 'ray',
+    description: '3D rendering from a 2D maze',
+    subtitle: 'React, Next.js, JavaScript',
+    url: 'https://react-raycasting.vercel.app/',
   },
 ];
 
