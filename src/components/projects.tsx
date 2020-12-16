@@ -6,6 +6,7 @@ import snakesImg from '../images/snake.jpg';
 import rebalanceImg from '../images/rebalance.jpg';
 import raycasterImg from '../images/raycaster.jpg';
 import catDogImg from '../images/catdog.jpg';
+import bananasImg from '../images/bananas.jpg';
 import Title from './shared/title';
 
 const ProjectSection = styled.div`
@@ -84,7 +85,7 @@ const projects = [
   {
     img: catDogImg,
     alt: 'cats and dogs',
-    description: 'Cat vs. Dog image classification',
+    description: 'Animal classification with CNN',
     subtitle: 'Tensorflow, Keras, Jupyter Notebook',
     url: 'https://www.kaggle.com/chanonroy/cat-dog-ml-basic',
   },
@@ -101,6 +102,13 @@ const projects = [
     description: '3D rendering from a 2D maze',
     subtitle: 'React, Next.js, JavaScript',
     url: 'https://react-raycasting.vercel.app/',
+  },
+  {
+    img: bananasImg,
+    alt: 'bananas',
+    description: 'Ripeness classifier from limited dataset',
+    subtitle: 'Tensorflow, Keras, Jupyter Notebook',
+    url: 'https://github.com/chanonroy/banana-classifier/blob/main/train.ipynb',
   },
 ];
 
