@@ -107,6 +107,8 @@ const socialLinks = [
 ];
 
 const Jumbo: FC = () => {
+  const isSafari = !!navigator.userAgent.match(/Version\/[\d.]+.*Safari/);
+
   return (
     <GradientBG>
       <Title> Hello, my name is Chanon </Title>
@@ -125,9 +127,11 @@ const Jumbo: FC = () => {
           );
         })}
       </IconGrid>
-      <BuildingContainer>
-        <img src={building} alt="building" />
-      </BuildingContainer>
+      {!isSafari && (
+        <BuildingContainer>
+          <img src={building} alt="building" />
+        </BuildingContainer>
+      )}
     </GradientBG>
   );
 };

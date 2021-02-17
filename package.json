@@ -2,7 +2,7 @@
   "name": "chanonroy.github.io",
   "description": "Portfolio site built with Gatsby",
   "version": "2.0.0",
-  "author": "Chanon Roy <chanon.roy@gmail.com>",
+  "author": "Chanon Roy <chanonroy@gmail.com>",
   "scripts": {
     "build": "yarn run clean && gatsby build",
     "develop": "gatsby develop",
