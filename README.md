@@ -19,7 +19,7 @@
     yarn
     ```
 
-1.  **Start developing.**
+2.  **Start developing.**
 
     Start the development server with the following command:
 
@@ -27,7 +27,7 @@
     yarn develop
     ```
 
-1.  **Linting**
+3.  **Linting**
 
     To use proper code formatting, this project is setup with eslint + typescript
 
