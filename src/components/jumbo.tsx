@@ -106,9 +106,10 @@ const socialLinks = [
   },
 ];
 
-const Jumbo: FC = () => {
-  const isSafari = !!navigator.userAgent.match(/Version\/[\d.]+.*Safari/);
+const isSafari =
+  !!navigator && navigator.userAgent.match(/Version\/[\d.]+.*Safari/);
 
+const Jumbo: FC = () => {
   return (
     <GradientBG>
       <Title> Hello, my name is Chanon </Title>
