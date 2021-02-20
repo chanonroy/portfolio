@@ -6,6 +6,7 @@ import {
   Medium,
 } from '@styled-icons/boxicons-logos'
 import React, { FC } from 'react'
+import { isSafari } from 'react-device-detect'
 import styled from 'styled-components'
 import building from '../images/ottawa.svg'
 
@@ -105,9 +106,6 @@ const socialLinks = [
     icon: <Medium size={44} />,
   },
 ]
-
-const isSafari =
-  !!navigator && !!navigator.userAgent.match(/Version\/[\d.]+.*Safari/)
 
 const Jumbo: FC = () => {
   return (
