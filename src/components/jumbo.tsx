@@ -4,10 +4,10 @@ import {
   Instagram,
   Linkedin,
   Medium,
-} from '@styled-icons/boxicons-logos';
-import React, { FC } from 'react';
-import styled from 'styled-components';
-import building from '../images/ottawa.svg';
+} from '@styled-icons/boxicons-logos'
+import React, { FC } from 'react'
+import styled from 'styled-components'
+import building from '../images/ottawa.svg'
 
 const GradientBG = styled.div`
   display: flex;
@@ -20,7 +20,7 @@ const GradientBG = styled.div`
   height: 100vh;
   max-height: 1200px;
   color: white;
-`;
+`
 
 const Title = styled.h2`
   font-size: 2.5em;
@@ -30,7 +30,7 @@ const Title = styled.h2`
     font-size: 1.7em;
     text-align: center;
   }
-`;
+`
 
 const SubTitle = styled.h3`
   font-size: 1.3em;
@@ -40,7 +40,7 @@ const SubTitle = styled.h3`
     font-size: 1em;
     text-align: center;
   }
-`;
+`
 
 const BuildingContainer = styled.div`
   display: flex;
@@ -62,11 +62,11 @@ const BuildingContainer = styled.div`
       display: none;
     }
   }
-`;
+`
 
 const IconGrid = styled.div`
   display: flex;
-`;
+`
 
 const Icon = styled.span`
   margin: 0 8px;
@@ -76,7 +76,7 @@ const Icon = styled.span`
   &:hover {
     opacity: 1;
   }
-`;
+`
 
 const socialLinks = [
   {
@@ -104,10 +104,10 @@ const socialLinks = [
     href: 'https://medium.com/@chanonroy',
     icon: <Medium size={44} />,
   },
-];
+]
 
 const isSafari =
-  !!navigator && navigator.userAgent.match(/Version\/[\d.]+.*Safari/);
+  !!navigator && !!navigator.userAgent.match(/Version\/[\d.]+.*Safari/)
 
 const Jumbo: FC = () => {
   return (
@@ -125,7 +125,7 @@ const Jumbo: FC = () => {
             >
               <Icon>{link.icon}</Icon>
             </a>
-          );
+          )
         })}
       </IconGrid>
       {!isSafari && (
@@ -134,7 +134,7 @@ const Jumbo: FC = () => {
         </BuildingContainer>
       )}
     </GradientBG>
-  );
-};
+  )
+}
 
-export default Jumbo;
+export default Jumbo
