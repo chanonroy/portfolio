@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import Container from './shared/container';
+import React from 'react'
+import styled from 'styled-components'
+import Container from './shared/container'
 
-import snakesImg from '../images/snake.jpg';
-import rebalanceImg from '../images/rebalance.jpg';
-import raycasterImg from '../images/raycaster.jpg';
-import catDogImg from '../images/catdog.jpg';
-import bananasImg from '../images/bananas.jpg';
-import Title from './shared/title';
+import snakesImg from '../images/snake.jpg'
+import rouletteImg from '../images/roulette.png'
+import raycasterImg from '../images/raycaster.jpg'
+import catDogImg from '../images/catdog.jpg'
+import bananasImg from '../images/bananas.jpg'
+import Title from './shared/title'
 
 const ProjectSection = styled.div`
   background-color: white;
@@ -16,7 +16,7 @@ const ProjectSection = styled.div`
   @media (max-width: ${({ theme }) => `${theme.breakpoints.sm}px`}) {
     padding: ${({ theme }) => `${theme.spacing.sm}px 0`};
   }
-`;
+`
 
 const Grid = styled.div`
   display: grid;
@@ -32,7 +32,7 @@ const Grid = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
   }
-`;
+`
 
 const GridItem = styled.div`
   text-align: center;
@@ -72,7 +72,7 @@ const GridItem = styled.div`
       font-size: 0.7em;
     }
   }
-`;
+`
 
 const projects = [
   {
@@ -90,11 +90,11 @@ const projects = [
     url: 'https://www.kaggle.com/chanonroy/cat-dog-ml-basic',
   },
   {
-    img: rebalanceImg,
-    alt: 'coins',
-    description: 'Rebalance your investing portfolio',
-    subtitle: 'React, Webpack, JavaScript',
-    url: 'https://github.com/chanonroy/portfolio-rebalancer',
+    img: rouletteImg,
+    alt: 'trip-roulette',
+    description: 'Find your next holiday at random',
+    subtitle: 'React, YouTube, React-Spring',
+    url: 'https://triproulette.vercel.app',
   },
   {
     img: raycasterImg,
@@ -110,7 +110,7 @@ const projects = [
     subtitle: 'Tensorflow, Keras, Jupyter Notebook',
     url: 'https://github.com/chanonroy/banana-classifier/blob/main/train.ipynb',
   },
-];
+]
 
 const Projects = () => {
   return (
@@ -130,7 +130,7 @@ const Projects = () => {
         </Grid>
       </Container>
     </ProjectSection>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects
