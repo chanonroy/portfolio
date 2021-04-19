@@ -69,16 +69,6 @@ const IconGrid = styled.div`
   display: flex;
 `
 
-const Icon = styled.span`
-  margin: 0 8px;
-  opacity: 0.8;
-  transition: ${({ theme }) => theme.transition.normal}}
-
-  &:hover {
-    opacity: 1;
-  }
-`
-
 const socialLinks = [
   {
     name: 'linkedin',
@@ -120,9 +110,7 @@ const Jumbo: FC = () => {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-            >
-              <Icon>{link.icon}</Icon>
-            </a>
+            ></a>
           )
         })}
       </IconGrid>

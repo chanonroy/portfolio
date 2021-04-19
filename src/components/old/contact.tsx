@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Container from './shared/container'
-import drinksImg from '../images/drinks.svg'
+import Container from '../../shared/container'
+import drinksImg from '../../images/drinks.svg'
 import { Email as EmailIcon } from '@styled-icons/material'
 
 const ContactCard = styled.div`

@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import Container from './shared/container'
+import Container from '../shared/container'
 
-import rulerImg from '../images/ruler.svg'
-import designImg from '../images/design.svg'
-import serverImg from '../images/server.svg'
-import mobileImg from '../images/mobile.svg'
-import webImg from '../images/web.svg'
-import circuitImg from '../images/circuit.svg'
-import Title from './shared/title'
+import rulerImg from '../../images/ruler.svg'
+import designImg from '../../images/design.svg'
+import serverImg from '../../images/server.svg'
+import mobileImg from '../../images/mobile.svg'
+import webImg from '../../images/web.svg'
+import circuitImg from '../../images/circuit.svg'
+// import Title from '../../shared/title'
 
 const skills = [
   {
@@ -114,7 +114,7 @@ const Skills = () => {
   return (
     <SkillsCard>
       <Container>
-        <Title> Some things that I have done </Title>
+        {/* <Title> Some things that I have done </Title> */}
         <Grid>
           {skills.map((skill, i) => (
             <Item key={`${i}-${skill.title}`}>

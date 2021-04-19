@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import Container from './shared/container'
+import Container from '../shared/container'
 
-import snakesImg from '../images/snake.jpg'
-import rouletteImg from '../images/roulette.png'
-import raycasterImg from '../images/raycaster.jpg'
-import catDogImg from '../images/catdog.jpg'
-import bananasImg from '../images/bananas.jpg'
-import Title from './shared/title'
+import snakesImg from '../../images/snake.jpg'
+import rouletteImg from '../../images/roulette.png'
+import raycasterImg from '../../images/raycaster.jpg'
+import catDogImg from '../../images/catdog.jpg'
+import bananasImg from '../../images/bananas.jpg'
+// import Title from '../../shared/title'
 
 const ProjectSection = styled.div`
   background-color: white;
@@ -116,7 +116,7 @@ const Projects = () => {
   return (
     <ProjectSection>
       <Container>
-        <Title>Some of my side projects</Title>
+        {/* <Title>Some of my side projects</Title> */}
         <Grid>
           {projects.map((project, i) => (
             <GridItem key={`${i}-${project.alt}`}>

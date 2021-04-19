@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import chanonImg from '../images/roy.svg'
-import timeGreeting from '../utils/time-greeting'
-import Container from './shared/container'
+import timeGreeting from '../../utils/time-greeting'
+import Container from '../shared/container'
 
 const ProfileCard = styled.div`
   background-color: #e5e5e5;
