@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import Container from './shared/container';
+import React from 'react'
+import styled from 'styled-components'
+import Container from './shared/container'
 
-import rulerImg from '../images/ruler.svg';
-import designImg from '../images/design.svg';
-import serverImg from '../images/server.svg';
-import mobileImg from '../images/mobile.svg';
-import webImg from '../images/web.svg';
-import circuitImg from '../images/circuit.svg';
-import Title from './shared/title';
+import rulerImg from '../images/ruler.svg'
+import designImg from '../images/design.svg'
+import serverImg from '../images/server.svg'
+import mobileImg from '../images/mobile.svg'
+import webImg from '../images/web.svg'
+import circuitImg from '../images/circuit.svg'
+import Title from './shared/title'
 
 const skills = [
   {
@@ -53,7 +53,7 @@ const skills = [
     ],
     img: circuitImg,
   },
-];
+]
 
 const SkillsCard = styled.div`
   padding: 80px 0;
@@ -62,7 +62,7 @@ const SkillsCard = styled.div`
   @media (max-width: ${({ theme }) => `${theme.breakpoints.sm}px`}) {
     padding: ${({ theme }) => `${theme.spacing.sm}px 0`};
   }
-`;
+`
 
 const Grid = styled.div`
   display: grid;
@@ -71,7 +71,7 @@ const Grid = styled.div`
   @media (max-width: ${({ theme }) => `${theme.breakpoints.xs}px`}) {
     grid-template-columns: 1fr 1fr;
   }
-`;
+`
 
 const Item = styled.div`
   text-align: center;
@@ -108,7 +108,7 @@ const Item = styled.div`
       margin: 0;
     }
   }
-`;
+`
 
 const Skills = () => {
   return (
@@ -128,7 +128,7 @@ const Skills = () => {
         </Grid>
       </Container>
     </SkillsCard>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills

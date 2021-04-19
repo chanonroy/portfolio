@@ -1,10 +1,6 @@
-import React, { ReactNode } from 'react';
-import { ThemeProvider, createGlobalStyle } from 'styled-components';
-import theme from '../../styles/theme';
-
-interface LayoutProps {
-  children: ReactNode;
-}
+import React, { ReactNode } from 'react'
+import { ThemeProvider, createGlobalStyle } from 'styled-components'
+import theme from '../../styles/theme'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -22,15 +18,15 @@ const GlobalStyle = createGlobalStyle`
       margin-top: 0;
     }
   }
-`;
+`
 
-const Layout = ({ children }: LayoutProps) => (
+const Layout = ({ children }: { children: ReactNode }) => (
   <>
     <GlobalStyle theme={theme} />
     <ThemeProvider theme={theme}>
       <main>{children}</main>
     </ThemeProvider>
   </>
-);
+)
 
-export default Layout;
+export default Layout

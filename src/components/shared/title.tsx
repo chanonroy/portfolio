@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Title = styled.h1`
   text-align: center;
@@ -8,6 +8,6 @@ const Title = styled.h1`
     margin-bottom: ${({ theme }) => `${theme.spacing.sm}px`};
     font-size: 1.7em;
   }
-`;
+`
 
-export default Title;
+export default Title

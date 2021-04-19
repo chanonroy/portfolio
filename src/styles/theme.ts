@@ -21,8 +21,8 @@ const theme = {
   transition: {
     normal: 'all 0.3s ease',
   },
-};
+}
 
-export type CustomTheme = typeof theme;
+export type CustomTheme = typeof theme
 
-export default theme;
+export default theme

@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
-import chanonImg from '../images/roy.svg';
-import timeGreeting from '../utils/time-greeting';
-import Container from './shared/container';
+import React from 'react'
+import styled from 'styled-components'
+import chanonImg from '../images/roy.svg'
+import timeGreeting from '../utils/time-greeting'
+import Container from './shared/container'
 
 const ProfileCard = styled.div`
   background-color: #e5e5e5;
-`;
+`
 
 const ProfileContainer = styled(Container)`
   position: relative;
@@ -22,11 +22,11 @@ const ProfileContainer = styled(Container)`
   @media (max-width: ${({ theme }) => `${theme.breakpoints.xs}px`}) {
     padding: ${({ theme }) => `${theme.spacing.xs}px`};
   }
-`;
+`
 
 const MutedText = styled.p`
   color: grey;
-`;
+`
 
 const ChanonImg = styled.img`
   position: absolute;
@@ -40,10 +40,10 @@ const ChanonImg = styled.img`
   @media (max-width: ${({ theme }) => `${theme.breakpoints.sm}px`}) {
     display: none;
   }
-`;
+`
 
 const Profile = () => {
-  const greetingText = timeGreeting();
+  const greetingText = timeGreeting()
   return (
     <ProfileCard>
       <ProfileContainer>
@@ -63,7 +63,7 @@ const Profile = () => {
         </div>
       </ProfileContainer>
     </ProfileCard>
-  );
-};
+  )
+}
 
-export default Profile;
+export default Profile

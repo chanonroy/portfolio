@@ -1,16 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
-import Container from './shared/container';
+import React from 'react'
+import styled from 'styled-components'
+import Container from './shared/container'
 
-import gamingImg from '../images/gaming.svg';
-import chickenImg from '../images/dish.svg';
-import ticketsImg from '../images/tickets.svg';
-import globeImg from '../images/globe.svg';
-import graphImg from '../images/graph.svg';
-import georgeImg from '../images/george.svg';
-import taoismImg from '../images/taoism.svg';
-import guitarImg from '../images/guitar.svg';
-import Title from './shared/title';
+import gamingImg from '../images/gaming.svg'
+import chickenImg from '../images/dish.svg'
+import ticketsImg from '../images/tickets.svg'
+import globeImg from '../images/globe.svg'
+import graphImg from '../images/graph.svg'
+import georgeImg from '../images/george.svg'
+import taoismImg from '../images/taoism.svg'
+import guitarImg from '../images/guitar.svg'
+import Title from './shared/title'
 
 const interests = [
   {
@@ -53,7 +53,7 @@ const interests = [
     img: guitarImg,
     alt: 'graph',
   },
-];
+]
 
 const ProjectCard = styled.div`
   background-color: white;
@@ -62,7 +62,7 @@ const ProjectCard = styled.div`
   @media (max-width: ${({ theme }) => `${theme.breakpoints.sm}px`}) {
     padding-bottom: ${({ theme }) => `${theme.spacing.sm}px`};
   }
-`;
+`
 
 const Grid = styled.div`
   display: grid;
@@ -78,7 +78,7 @@ const Grid = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: none;
   }
-`;
+`
 
 const GridItem = styled.div`
   text-align: center;
@@ -104,7 +104,7 @@ const GridItem = styled.div`
       margin-bottom: 0px;
     }
   }
-`;
+`
 
 const Interests = () => {
   return (
@@ -121,7 +121,7 @@ const Interests = () => {
         </Grid>
       </Container>
     </ProjectCard>
-  );
-};
+  )
+}
 
-export default Interests;
+export default Interests

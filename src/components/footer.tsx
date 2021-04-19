@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const Footercard = styled.div`
   padding: 40px 0;
   background-color: #384047;
   color: #999;
   text-align: center;
-`;
+`
 
 const Footer = () => {
   return (
@@ -50,7 +50,7 @@ const Footer = () => {
         Made by <b>Chanon Roy</b>
       </p>
     </Footercard>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
