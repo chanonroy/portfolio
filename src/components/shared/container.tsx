@@ -7,9 +7,9 @@ const Container = ({ children }: { children: ReactNode }) => {
   return (
     <div
       style={{
-        maxWidth: width > Breakpoints.Small ? 1170 : 750,
-        paddingLeft: width > Breakpoints.Medium ? 40 : 20,
-        paddingRight: width > Breakpoints.Medium ? 40 : 20,
+        maxWidth: width > Breakpoints.Small ? 800 : 550,
+        // paddingLeft: width > Breakpoints.Medium ? 40 : 20,
+        // paddingRight: width > Breakpoints.Medium ? 40 : 20,
         marginLeft: 'auto',
         marginRight: 'auto',
         boxSizing: 'border-box',
