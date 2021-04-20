@@ -8,8 +8,8 @@ const Container = ({ children }: { children: ReactNode }) => {
     <div
       style={{
         maxWidth: width > Breakpoints.Small ? 800 : 550,
-        // paddingLeft: width > Breakpoints.Medium ? 40 : 20,
-        // paddingRight: width > Breakpoints.Medium ? 40 : 20,
+        paddingLeft: width > Breakpoints.Medium ? 0 : 20,
+        paddingRight: width > Breakpoints.Medium ? 0 : 20,
         marginLeft: 'auto',
         marginRight: 'auto',
         boxSizing: 'border-box',

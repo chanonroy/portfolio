@@ -1,15 +1,19 @@
-import '../styles/base.css'
 import React from 'react'
+import Jumbotron from '../components/Jumbotron'
+import Projects from '../components/Projects'
+import Container from '../components/shared/container'
 import SEO from '../components/shared/seo'
-import Jumbotron from '../components/jumbotron'
+import '../styles/base.css'
 
 const Updated = () => {
   return (
     <>
       <SEO title="Chanon Roy" />
-      <main>
+      <Container>
         <Jumbotron />
-      </main>
+        <Projects />
+        {/* <About /> */}
+      </Container>
     </>
   )
 }
