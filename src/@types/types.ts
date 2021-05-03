@@ -3,8 +3,8 @@ export enum Colors {
 }
 
 export enum Breakpoints {
-  xSmall = 500,
-  Small = 768,
+  xSmall = 480,
+  Small = 800,
   Medium = 992,
   Large = 1200,
 }

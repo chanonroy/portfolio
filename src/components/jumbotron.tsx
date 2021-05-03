@@ -5,6 +5,8 @@ import {
   Medium,
 } from '@styled-icons/boxicons-logos'
 import React from 'react'
+import { Breakpoints } from '../@types/types'
+import useWindowDimensions from '../hooks/use-window-dimensions'
 import chanonImg from '../images/chanon.png'
 import ukFlagImg from '../images/uk-flag.svg'
 
@@ -32,6 +34,8 @@ const socialLinks = [
 ]
 
 const Jumbotron = () => {
+  const { width: screenWidth } = useWindowDimensions()
+
   return (
     <div
       style={{
@@ -40,9 +44,23 @@ const Jumbotron = () => {
         width: '100%',
         marginTop: 150,
         marginBottom: 150,
+        ...(screenWidth < Breakpoints.Small && {
+          flexDirection: 'column',
+          marginTop: 40,
+          marginBottom: 40,
+        }),
       }}
     >
-      <div style={{ marginRight: 40 }}>
+      <div
+        style={{
+          marginRight: 40,
+          ...(screenWidth < Breakpoints.Small && {
+            marginBottom: 60,
+            marginRight: 0,
+            textAlign: 'center',
+          }),
+        }}
+      >
         <div
           style={{
             fontWeight: 'bold',
@@ -51,33 +69,57 @@ const Jumbotron = () => {
             marginBottom: 15,
           }}
         >
-          Hello
+          Hi there
         </div>
         <div style={{ fontSize: 24, color: '#6E7272', marginBottom: 15 }}>
           My name is Chanon
         </div>
-        <div style={{ display: 'flex', marginBottom: 25 }}>
-          <div style={{ fontSize: 18, color: '#6E7272' }}>
-            I am a software developer living in London
-          </div>
-          <img src={ukFlagImg} style={{ width: 20, marginLeft: 8 }} />
+
+        <div
+          style={{
+            fontSize: 18,
+            color: '#6E7272',
+            marginBottom: 25,
+          }}
+        >
+          <span>I’m a software developer living in London</span>
+          <img
+            src={ukFlagImg}
+            style={{ width: 20, marginLeft: 8, verticalAlign: 'middle' }}
+          />
         </div>
-        {socialLinks.map((link, i) => {
-          return (
-            <a
-              key={`${i}-${link.name}`}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span style={{ marginRight: 15, color: 'darkgrey' }}>
-                {link.icon}
-              </span>
-            </a>
-          )
-        })}
+
+        <div>
+          {socialLinks.map((link, i) => {
+            return (
+              <a
+                key={`${i}-${link.name}`}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span style={{ marginRight: 15, color: 'darkgrey' }}>
+                  {link.icon}
+                </span>
+              </a>
+            )
+          })}
+        </div>
       </div>
-      <img style={{ maxWidth: 300 }} src={chanonImg} alt={'chanon'} />
+      <div
+        style={{
+          display: 'flex',
+          ...(screenWidth < Breakpoints.Medium && {
+            justifyContent: 'center',
+            marginBottom: 60,
+          }),
+          ...(screenWidth < Breakpoints.Small && {
+            justifyContent: 'flex-end',
+          }),
+        }}
+      >
+        <img style={{ maxWidth: 300 }} src={chanonImg} alt={'chanon'} />
+      </div>
     </div>
   )
 }

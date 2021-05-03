@@ -7,7 +7,7 @@ const Title = ({ children }: { children: ReactNode }) => {
         textAlign: 'center',
         fontSize: 35,
         fontWeight: 'bold',
-        marginBottom: 30,
+        marginBottom: 80,
       }}
     >
       {children}
