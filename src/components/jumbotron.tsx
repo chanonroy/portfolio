@@ -42,7 +42,7 @@ const Jumbotron = () => {
         marginBottom: 150,
       }}
     >
-      <div style={{ marginRight: 40, padding: 20 }}>
+      <div style={{ marginRight: 40 }}>
         <div
           style={{
             fontWeight: 'bold',

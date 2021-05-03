@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import TabBar from './shared/TabBar'
 import Title from './Title'
 
 const Square = ({ color }: { color: string }) => {
@@ -16,9 +17,15 @@ const Square = ({ color }: { color: string }) => {
 }
 
 const Projects = () => {
+  const [activeTopic, setActiveTopic] = useState('')
   return (
     <>
       <Title>My projects</Title>
+      <TabBar
+        topics={['All', 'Coding', 'Articles', 'Artwork']}
+        activeTopic={activeTopic}
+        onClick={setActiveTopic}
+      />
       <div
         style={{
           display: 'grid',

@@ -1,26 +1,22 @@
 {
-    "parser": "@typescript-eslint/parser",
-    "plugins": [
-      "@typescript-eslint"
-    ],
-    "extends": [
-      "eslint:recommended",
-      "plugin:react/recommended",
-      "plugin:@typescript-eslint/eslint-recommended",
-      "plugin:@typescript-eslint/recommended",
-      "plugin:prettier/recommended"
-    ],
-    "rules": {
-      "@typescript-eslint/explicit-function-return-type": "off",
-      "@typescript-eslint/no-empty-interface": "off"
-    },
-    "ignorePatterns": [
-      "gatsby-config.js",
-      "node_modules/"
-    ],
-    "settings": {
-      "react": {
-        "version": "detect"
-      }
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/member-delimiter-style": "off"
+  },
+  "ignorePatterns": ["gatsby-config.js", "node_modules/"],
+  "settings": {
+    "react": {
+      "version": "detect"
     }
+  }
 }
