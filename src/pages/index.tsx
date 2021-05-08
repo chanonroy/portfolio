@@ -2,7 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import About from '../components/About'
 import Container from '../components/Container'
-import Jumbotron from '../components/Jumbotron'
+import Jumbo from '../components/Jumbo'
 import Projects from '../components/Projects'
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
         <link rel="shortcut icon" href="/roy.png" />
       </Head>
       <Container>
-        <Jumbotron />
+        <Jumbo />
         <Projects />
         <About />
       </Container>

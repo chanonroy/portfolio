@@ -31,7 +31,7 @@ const socialLinks = [
   },
 ]
 
-const Jumbotron = () => {
+const Jumbo = () => {
   const { width: screenWidth } = useWindowSize()
 
   return (
@@ -126,4 +126,4 @@ const Jumbotron = () => {
   )
 }
 
-export default Jumbotron
+export default Jumbo
