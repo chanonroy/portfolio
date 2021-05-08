@@ -1,23 +1,20 @@
 import React from 'react'
-import Title from './shared/title'
-import wealthsimpleImg from '../images/wealthsimple.png'
-import canadaImg from '../images/canada.svg'
-import guitarImg from '../images/guitar.svg'
+import Title from './shared/Title'
 import getColumns from '../utils/getColumns'
 import useWindowSize from '../hooks/use-window-size'
 
 const aboutItems = [
   {
     text: "I'm currently focused on building digital products at Wealthsimple",
-    img: wealthsimpleImg,
+    img: 'wealthsimple.png',
   },
   {
     text: "I've lived across the world, but my hometown is Ottawa, Canada",
-    img: canadaImg,
+    img: 'canada.svg',
   },
   {
     text: 'On the side, I play classical guitar and obsess over film analysis',
-    img: guitarImg,
+    img: 'guitar.svg',
   },
 ]
 
@@ -37,7 +34,10 @@ const About = () => {
         {aboutItems.map((item, idx) => (
           <div key={idx} style={{ textAlign: 'center' }}>
             <div>
-              <img src={item.img} style={{ width: 80, marginBottom: 30 }} />
+              <img
+                src={`/images/${item.img}`}
+                style={{ width: 80, marginBottom: 30 }}
+              />
             </div>
             <div style={{ color: 'darkgrey' }}>{item.text}</div>
           </div>

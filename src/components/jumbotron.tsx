@@ -7,8 +7,6 @@ import {
 import React from 'react'
 import { Breakpoints } from '../@types/types'
 import useWindowSize from '../hooks/use-window-size'
-import chanonImg from '../images/chanon.png'
-import ukFlagImg from '../images/uk-flag.svg'
 
 const socialLinks = [
   {
@@ -84,7 +82,7 @@ const Jumbotron = () => {
         >
           <span>I’m a software developer living in London</span>
           <img
-            src={ukFlagImg}
+            src={'/images/uk-flag.svg'}
             style={{ width: 20, marginLeft: 8, verticalAlign: 'middle' }}
           />
         </div>
@@ -118,7 +116,11 @@ const Jumbotron = () => {
           }),
         }}
       >
-        <img style={{ maxWidth: 300 }} src={chanonImg} alt={'chanon'} />
+        <img
+          style={{ maxWidth: 300 }}
+          src={'/images/chanon.png'}
+          alt={'chanon'}
+        />
       </div>
     </div>
   )
