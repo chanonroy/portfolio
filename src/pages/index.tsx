@@ -18,7 +18,6 @@ const App = () => {
         <Projects />
         <About />
       </Container>
-      );
     </>
   )
 }
