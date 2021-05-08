@@ -6,7 +6,7 @@ import {
 } from '@styled-icons/boxicons-logos'
 import React from 'react'
 import { Breakpoints } from '../@types/types'
-import useWindowDimensions from '../hooks/use-window-dimensions'
+import useWindowSize from '../hooks/use-window-size'
 import chanonImg from '../images/chanon.png'
 import ukFlagImg from '../images/uk-flag.svg'
 
@@ -34,7 +34,7 @@ const socialLinks = [
 ]
 
 const Jumbotron = () => {
-  const { width: screenWidth } = useWindowDimensions()
+  const { width: screenWidth } = useWindowSize()
 
   return (
     <div
@@ -44,23 +44,21 @@ const Jumbotron = () => {
         width: '100%',
         marginTop: 150,
         marginBottom: 150,
-        ...(!!screenWidth &&
-          screenWidth < Breakpoints.Small && {
-            flexDirection: 'column',
-            marginTop: 40,
-            marginBottom: 40,
-          }),
+        ...(screenWidth < Breakpoints.Small && {
+          flexDirection: 'column',
+          marginTop: 40,
+          marginBottom: 40,
+        }),
       }}
     >
       <div
         style={{
           marginRight: 40,
-          ...(!!screenWidth &&
-            screenWidth < Breakpoints.Small && {
-              marginBottom: 60,
-              marginRight: 0,
-              textAlign: 'center',
-            }),
+          ...(screenWidth < Breakpoints.Small && {
+            marginBottom: 60,
+            marginRight: 0,
+            textAlign: 'center',
+          }),
         }}
       >
         <div
@@ -111,15 +109,13 @@ const Jumbotron = () => {
       <div
         style={{
           display: 'flex',
-          ...(!!screenWidth &&
-            screenWidth < Breakpoints.Medium && {
-              justifyContent: 'center',
-              marginBottom: 60,
-            }),
-          ...(!!screenWidth &&
-            screenWidth < Breakpoints.Small && {
-              justifyContent: 'flex-end',
-            }),
+          ...(screenWidth < Breakpoints.Medium && {
+            justifyContent: 'center',
+            marginBottom: 60,
+          }),
+          ...(screenWidth < Breakpoints.Small && {
+            justifyContent: 'flex-end',
+          }),
         }}
       >
         <img style={{ maxWidth: 300 }} src={chanonImg} alt={'chanon'} />

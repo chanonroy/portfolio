@@ -4,7 +4,7 @@ import wealthsimpleImg from '../images/wealthsimple.png'
 import canadaImg from '../images/canada.svg'
 import guitarImg from '../images/guitar.svg'
 import getColumns from '../utils/getColumns'
-import useWindowDimensions from '../hooks/use-window-dimensions'
+import useWindowSize from '../hooks/use-window-size'
 
 const aboutItems = [
   {
@@ -22,7 +22,7 @@ const aboutItems = [
 ]
 
 const About = () => {
-  const { width: screenWidth } = useWindowDimensions()
+  const { width: screenWidth } = useWindowSize()
 
   return (
     <div style={{ marginBottom: 200 }}>

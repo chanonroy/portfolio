@@ -1,5 +1,5 @@
 import React from 'react'
-import useWindowDimensions from '../hooks/use-window-dimensions'
+import useWindowSize from '../hooks/use-window-size'
 import bananasImg from '../images/bananas.png'
 import catDogImg from '../images/catdog.png'
 import driveImg from '../images/drive.png'
@@ -69,7 +69,7 @@ const Square = ({ image, url }: { image: string; url: string }) => {
 }
 
 const Projects = () => {
-  const { width: screenWidth } = useWindowDimensions()
+  const { width: screenWidth } = useWindowSize()
 
   return (
     <>

@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react'
 import { Breakpoints } from '../../@types/types'
-import useWindowDimensions from '../../hooks/use-window-dimensions'
+import useWindowSize from '../../hooks/use-window-size'
 
 const Container = ({ children }: { children: ReactNode }) => {
-  const { width } = useWindowDimensions()
+  const { width } = useWindowSize()
   return (
     <div
       style={{
