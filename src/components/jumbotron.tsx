@@ -44,21 +44,23 @@ const Jumbotron = () => {
         width: '100%',
         marginTop: 150,
         marginBottom: 150,
-        ...(screenWidth < Breakpoints.Small && {
-          flexDirection: 'column',
-          marginTop: 40,
-          marginBottom: 40,
-        }),
+        ...(!!screenWidth &&
+          screenWidth < Breakpoints.Small && {
+            flexDirection: 'column',
+            marginTop: 40,
+            marginBottom: 40,
+          }),
       }}
     >
       <div
         style={{
           marginRight: 40,
-          ...(screenWidth < Breakpoints.Small && {
-            marginBottom: 60,
-            marginRight: 0,
-            textAlign: 'center',
-          }),
+          ...(!!screenWidth &&
+            screenWidth < Breakpoints.Small && {
+              marginBottom: 60,
+              marginRight: 0,
+              textAlign: 'center',
+            }),
         }}
       >
         <div
@@ -109,13 +111,15 @@ const Jumbotron = () => {
       <div
         style={{
           display: 'flex',
-          ...(screenWidth < Breakpoints.Medium && {
-            justifyContent: 'center',
-            marginBottom: 60,
-          }),
-          ...(screenWidth < Breakpoints.Small && {
-            justifyContent: 'flex-end',
-          }),
+          ...(!!screenWidth &&
+            screenWidth < Breakpoints.Medium && {
+              justifyContent: 'center',
+              marginBottom: 60,
+            }),
+          ...(!!screenWidth &&
+            screenWidth < Breakpoints.Small && {
+              justifyContent: 'flex-end',
+            }),
         }}
       >
         <img style={{ maxWidth: 300 }} src={chanonImg} alt={'chanon'} />

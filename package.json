@@ -9,7 +9,7 @@
     "start": "yarn run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx",
+    "lint": "tsc --noEmit && prettier -c . && eslint .",
     "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
