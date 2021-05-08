@@ -6,7 +6,7 @@ import driveImg from '../images/drive.png'
 import raycasterImg from '../images/raycaster.png'
 import snakesImg from '../images/snake.png'
 import getColumns from '../utils/getColumns'
-import Title from './shared/Title'
+import Title from './shared/title'
 
 const projects = [
   {

@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from './shared/Title'
+import Title from './shared/title'
 import wealthsimpleImg from '../images/wealthsimple.png'
 import canadaImg from '../images/canada.svg'
 import guitarImg from '../images/guitar.svg'
