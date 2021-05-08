@@ -11,13 +11,15 @@ export default function useWindowSize() {
     setWindowSize({ width: window.innerWidth, height: window.innerHeight })
   }
 
-  React.useEffect(() => {
-    window.addEventListener('resize', changeWindowSize)
+  if (!isSSR) {
+    React.useEffect(() => {
+      window.addEventListener('resize', changeWindowSize)
 
-    return () => {
-      window.removeEventListener('resize', changeWindowSize)
-    }
-  }, [])
+      return () => {
+        window.removeEventListener('resize', changeWindowSize)
+      }
+    }, [])
+  }
 
   return windowSize
 }
