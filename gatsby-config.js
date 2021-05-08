@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-74820007-1",
+        trackingId: 'UA-74820007-1',
       },
     },
     // TypeScript
@@ -20,29 +20,13 @@ module.exports = {
         allExtensions: true,
       },
     },
-    // Styled Components
-    `gatsby-plugin-styled-components`,
-    {
-      resolve: 'gatsby-plugin-eslint',
-      options: {
-        test: /\.ts$|\.tsx$/,
-        exclude: /(node_modules|.cache|public)/,
-        stages: ['develop'],
-        options: {
-          emitWarning: true,
-          failOnError: false
-        }
-      }
-    },
     // Google Fonts
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Open Sans`
-        ],
-        display: 'swap'
-      }
+        fonts: [`Open Sans`],
+        display: 'swap',
+      },
     },
     // Head Data
     `gatsby-plugin-react-helmet`,
@@ -68,6 +52,6 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/roy.png`, // This path is relative to the root of the site.
       },
-    }
+    },
   ],
 }
