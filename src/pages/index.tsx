@@ -1,6 +1,6 @@
 import React from 'react'
 import About from '../components/About'
-import Jumbotron from '../components/Jumbotron'
+import Jumbotron from '../components/jumbotron'
 import Projects from '../components/Projects'
 import Container from '../components/shared/Container'
 import SEO from '../components/shared/Seo'
