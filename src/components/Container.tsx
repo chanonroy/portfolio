@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
-import { Breakpoints } from '../../@types/types'
-import useWindowSize from '../../hooks/use-window-size'
+import { Breakpoints } from '../@types/types'
+import useWindowSize from '../hooks/use-window-size'
 
 const Container = ({ children }: { children: ReactNode }) => {
   const { width } = useWindowSize()

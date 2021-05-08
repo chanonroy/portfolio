@@ -1,7 +1,7 @@
 import React from 'react'
 import useWindowSize from '../hooks/use-window-size'
 import getColumns from '../utils/getColumns'
-import Title from './shared/Title'
+import Title from './Title'
 
 const projects = [
   {

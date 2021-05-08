@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import React from 'react'
 import About from '../components/About'
+import Container from '../components/Container'
 import Jumbotron from '../components/Jumbotron'
 import Projects from '../components/Projects'
-import Container from '../components/shared/Container'
 
 const App = () => {
   return (
