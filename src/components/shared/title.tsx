@@ -1,13 +1,18 @@
-import styled from 'styled-components'
+import React, { ReactNode } from 'react'
 
-const Title = styled.h1`
-  text-align: center;
-  margin-bottom: ${({ theme }) => `${theme.spacing.md}px`};
-
-  @media (max-width: ${({ theme }) => `${theme.breakpoints.sm}px`}) {
-    margin-bottom: ${({ theme }) => `${theme.spacing.sm}px`};
-    font-size: 1.7em;
-  }
-`
+const Title = ({ children }: { children: ReactNode }) => {
+  return (
+    <div
+      style={{
+        textAlign: 'center',
+        fontSize: 35,
+        fontWeight: 'bold',
+        marginBottom: 80,
+      }}
+    >
+      {children}
+    </div>
+  )
+}
 
 export default Title

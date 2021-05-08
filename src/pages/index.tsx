@@ -1,25 +1,22 @@
 import React from 'react'
-import Jumbo from '../components/old/jumbo'
-import Profile from '../components/old/profile'
-import Layout from '../components/shared/layout'
-import SEO from '../components/shared/seo'
-import Skills from '../components/old/skills'
-import Contact from '../components/old/contact'
-import Projects from '../components/old/projects'
-import Interests from '../components/old/interests'
-import Footer from '../components/old/footer'
+import About from '../components/About'
+import Jumbotron from '../components/Jumbotron'
+import Projects from '../components/Projects'
+import Container from '../components/shared/Container'
+import SEO from '../components/shared/Seo'
+import '../styles/base.css'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Chanon Roy" />
-    {/* <Jumbo />
-    <Profile />
-    <Skills />
-    <Contact />
-    <Projects />
-    <Interests />
-    <Footer /> */}
-  </Layout>
-)
+const App = () => {
+  return (
+    <>
+      <SEO title="Chanon Roy" />
+      <Container>
+        <Jumbotron />
+        <Projects />
+        <About />
+      </Container>
+    </>
+  )
+}
 
-export default IndexPage
+export default App

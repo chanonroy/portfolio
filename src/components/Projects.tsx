@@ -1,12 +1,12 @@
 import React from 'react'
-import { Breakpoints } from '../@types/types'
 import useWindowDimensions from '../hooks/use-window-dimensions'
 import bananasImg from '../images/bananas.png'
 import catDogImg from '../images/catdog.png'
 import driveImg from '../images/drive.png'
 import raycasterImg from '../images/raycaster.png'
 import snakesImg from '../images/snake.png'
-import Title from './Title'
+import getColumns from '../utils/getColumns'
+import Title from './shared/Title'
 
 const projects = [
   {
@@ -71,19 +71,9 @@ const Square = ({ image, url }: { image: string; url: string }) => {
 const Projects = () => {
   const { width: screenWidth } = useWindowDimensions()
 
-  const getColumns = () => {
-    if (screenWidth > Breakpoints.Medium) {
-      return '1fr 1fr 1fr'
-    }
-    if (screenWidth > Breakpoints.xSmall) {
-      return '1fr 1fr'
-    }
-    return '1fr'
-  }
-
   return (
     <>
-      <Title>My projects</Title>
+      <Title>Side projects</Title>
       {/* <TabBar
         topics={['Coding', 'Articles', 'Artwork']}
         activeTopic={activeTopic}
@@ -92,7 +82,7 @@ const Projects = () => {
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: getColumns(),
+          gridTemplateColumns: getColumns(screenWidth),
           gridGap: 40,
           marginBottom: 80,
         }}
