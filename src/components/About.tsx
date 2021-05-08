@@ -1,6 +1,6 @@
 import React from 'react'
-import useWindowSize from '../hooks/use-window-size'
-import getColumns from '../utils/getColumns'
+import styled from 'styled-components'
+import { Breakpoints } from '../@types/types'
 import Title from './Title'
 
 const aboutItems = [
@@ -18,19 +18,23 @@ const aboutItems = [
   },
 ]
 
-const About = () => {
-  const { width: screenWidth } = useWindowSize()
+const AboutGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  @media (max-width: ${`${Breakpoints.Medium}px`}) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: ${`${Breakpoints.xSmall}px`}) {
+    grid-template-columns: 1fr;
+  }
+`
 
+const About = () => {
   return (
     <div style={{ marginBottom: 200 }}>
       <Title>More about me</Title>
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: getColumns(screenWidth),
-          gap: 20,
-        }}
-      >
+      <AboutGrid>
         {aboutItems.map((item, idx) => (
           <div key={idx} style={{ textAlign: 'center' }}>
             <div>
@@ -42,7 +46,7 @@ const About = () => {
             <div style={{ color: 'darkgrey' }}>{item.text}</div>
           </div>
         ))}
-      </div>
+      </AboutGrid>
     </div>
   )
 }

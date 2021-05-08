@@ -1,6 +1,6 @@
 import React from 'react'
-import useWindowSize from '../hooks/use-window-size'
-import getColumns from '../utils/getColumns'
+import styled from 'styled-components'
+import { Breakpoints } from '../@types/types'
 import Title from './Title'
 
 const projects = [
@@ -42,6 +42,21 @@ const projects = [
   },
 ]
 
+const ProjectsGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  margin-bottom: 200px;
+  @media (max-width: ${`${Breakpoints.Medium}px`}) {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 80px;
+  }
+  @media (max-width: ${`${Breakpoints.xSmall}px`}) {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+`
+
 const Square = ({ image, url }: { image: string; url: string }) => {
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
@@ -64,8 +79,6 @@ const Square = ({ image, url }: { image: string; url: string }) => {
 }
 
 const Projects = () => {
-  const { width: screenWidth } = useWindowSize()
-
   return (
     <>
       <Title>Side projects</Title>
@@ -74,14 +87,7 @@ const Projects = () => {
         activeTopic={activeTopic}
         onClick={setActiveTopic}
       /> */}
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: getColumns(screenWidth),
-          gridGap: 40,
-          marginBottom: 80,
-        }}
-      >
+      <ProjectsGrid>
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
@@ -112,7 +118,7 @@ const Projects = () => {
             </div>
           )
         })}
-      </div>
+      </ProjectsGrid>
     </>
   )
 }

@@ -5,8 +5,8 @@ import {
   Medium,
 } from '@styled-icons/boxicons-logos'
 import React from 'react'
+import styled from 'styled-components'
 import { Breakpoints } from '../@types/types'
-import useWindowSize from '../hooks/use-window-size'
 
 const socialLinks = [
   {
@@ -31,34 +31,44 @@ const socialLinks = [
   },
 ]
 
-const Jumbo = () => {
-  const { width: screenWidth } = useWindowSize()
+const JumboContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  @media (max-width: ${`${Breakpoints.Small}px`}) {
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+`
 
+const TextContainer = styled.div`
+  margin-right: 60px;
+  @media (max-width: ${`${Breakpoints.Small}px`}) {
+    margin-bottom: 60px;
+    margin-right: 0px;
+    text-align: center;
+  }
+`
+
+const PersonContainer = styled.div`
+  display: flex;
+  @media (max-width: ${`${Breakpoints.Medium}px`}) {
+    justify-content: center;
+    margin-bottom: 60;
+  }
+  @media (max-width: ${`${Breakpoints.Small}px`}) {
+    justify-content: flex-end;
+  }
+`
+
+const Jumbo = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        width: '100%',
-        marginTop: 150,
-        marginBottom: 150,
-        ...(screenWidth < Breakpoints.Small && {
-          flexDirection: 'column',
-          marginTop: 40,
-          marginBottom: 40,
-        }),
-      }}
-    >
-      <div
-        style={{
-          marginRight: 40,
-          ...(screenWidth < Breakpoints.Small && {
-            marginBottom: 60,
-            marginRight: 0,
-            textAlign: 'center',
-          }),
-        }}
-      >
+    <JumboContainer>
+      <TextContainer>
         <div
           style={{
             fontWeight: 'bold',
@@ -103,26 +113,15 @@ const Jumbo = () => {
             )
           })}
         </div>
-      </div>
-      <div
-        style={{
-          display: 'flex',
-          ...(screenWidth < Breakpoints.Medium && {
-            justifyContent: 'center',
-            marginBottom: 60,
-          }),
-          ...(screenWidth < Breakpoints.Small && {
-            justifyContent: 'flex-end',
-          }),
-        }}
-      >
+      </TextContainer>
+      <PersonContainer>
         <img
           style={{ maxWidth: 300 }}
           src={'/images/chanon.png'}
           alt={'chanon'}
         />
-      </div>
-    </div>
+      </PersonContainer>
+    </JumboContainer>
   )
 }
 

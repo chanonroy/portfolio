@@ -1,23 +1,23 @@
-import React, { ReactNode } from 'react'
+import styled from 'styled-components'
 import { Breakpoints } from '../@types/types'
-import useWindowSize from '../hooks/use-window-size'
 
-const Container = ({ children }: { children: ReactNode }) => {
-  const { width } = useWindowSize()
-  return (
-    <div
-      style={{
-        maxWidth: width > Breakpoints.Small ? 800 : 550,
-        paddingLeft: width > Breakpoints.Medium ? 0 : 20,
-        paddingRight: width > Breakpoints.Medium ? 0 : 20,
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        boxSizing: 'border-box',
-      }}
-    >
-      {children}
-    </div>
-  )
-}
+const StyledContainer = styled.div`
+  max-width: 550px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  @media (min-width: ${`${Breakpoints.Small}px`}) {
+    max-width: 700px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media (min-width: ${`${Breakpoints.Medium}px`}) {
+    max-width: 800px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+`
 
-export default Container
+export default StyledContainer
