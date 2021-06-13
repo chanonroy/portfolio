@@ -57,28 +57,30 @@ const ProjectsGrid = styled.div`
     margin-bottom: 80px;
   }
   @media (max-width: ${`${Breakpoints.xSmall}px`}) {
-    grid-template-columns: 1fr;
-    margin-bottom: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+`
+
+const ProjectThumbnail = styled.div<{ image: string }>`
+  background-image: url(${({ image }) => image});
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 230px;
+  width: 100%;
+  border-radius: 5px;
+  opacity: 1;
+  cursor: pointer;
+  margin-bottom: 20px;
+  @media (max-width: ${`${Breakpoints.xSmall}px`}) {
+    height: 150px;
   }
 `
 
 const Square = ({ image, url }: { image: string; url: string }) => {
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
-      <div
-        style={{
-          backgroundImage: `url(${image})`,
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          height: 230,
-          width: '100%',
-          borderRadius: 5,
-          opacity: 1,
-          cursor: 'pointer',
-          marginBottom: 20,
-        }}
-      ></div>
+      <ProjectThumbnail image={image} />
     </a>
   )
 }
