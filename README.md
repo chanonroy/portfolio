@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="roy" src="./src/images/roy.png" width="60" />
+  <img alt="roy" src="./public/favicon.png" width="60" />
 </p>
 <h1 align="center">
   My portfolio website
