@@ -67,7 +67,7 @@ const PersonContainer = styled.div`
 
 const ImageNarrow = styled.img`
   align-self: center;
-  max-width: 550px;
+  width: 100%;
   @media (min-width: ${`${Breakpoints.Small}px`}) {
     display: none;
   }
