@@ -1,5 +1,8 @@
 export enum Colors {
   background = '#F9F8F7',
+  dark = '#54575A',
+  grey = "#6E7272",
+  light = "darkgrey"
 }
 
 export enum Breakpoints {

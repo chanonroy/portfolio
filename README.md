@@ -6,7 +6,7 @@
 </h1>
 
 <p align="center">
-  This is version 2.0 of my portfolio site that is spun up using Gatsby.
+  This is version 2.0 of my portfolio site that is spun up using Create React App
 </p>
 
 ## 📦 Project Setup

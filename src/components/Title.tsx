@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react'
+import { Colors } from '../@types'
 
 const Title = ({ children }: { children: ReactNode }) => {
   return (
@@ -8,6 +9,7 @@ const Title = ({ children }: { children: ReactNode }) => {
         fontSize: 35,
         fontWeight: 'bold',
         marginBottom: 80,
+        color: Colors.dark
       }}
     >
       {children}

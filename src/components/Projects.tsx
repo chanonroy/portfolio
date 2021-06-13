@@ -1,18 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Breakpoints } from '../@types/types'
+import { Breakpoints, Colors } from '../@types/index'
 import Title from './Title'
+import snakeImg from "../images/projects/snake.png"
+import driveImg from "../images/projects/drive.png"
+import catDogImg from "../images/projects/catdog.png"
+import raycasterImg from "../images/projects/raycaster.png"
+import bananasImg from "../images/projects/bananas.png"
 
 const projects = [
   {
-    img: 'snake.png',
+    img: snakeImg,
     alt: 'snakes',
     title: 'React Snake Game',
     subtitle: 'Eat food, grow your tail, and avoid crashing into yourself',
     url: 'https://roy-react-snake.vercel.app/',
   },
   {
-    img: 'drive.png',
+    img: driveImg,
     alt: 'roadtrip-roulette',
     title: 'Roadtrip Roulette',
     subtitle:
@@ -20,21 +25,21 @@ const projects = [
     url: 'https://triproulette.vercel.app',
   },
   {
-    img: 'catdog.png',
+    img: catDogImg,
     alt: 'cats and dogs',
     title: 'Cat / Dog Classifier',
     subtitle: 'Animal image classification with Convolutional Neural Networks',
     url: 'https://www.kaggle.com/chanonroy/cat-dog-ml-basic',
   },
   {
-    img: 'raycaster.png',
+    img: raycasterImg,
     alt: 'ray',
     title: 'React Raycasting',
     subtitle: '2D to 3D maze Raycasting inspired by Wolfeinstein 3D',
     url: 'https://react-raycasting.vercel.app/',
   },
   {
-    img: 'bananas.png',
+    img: bananasImg,
     alt: 'bananas',
     title: 'Banana Classifier',
     subtitle: 'Ripeness classification from a limited dataset',
@@ -82,18 +87,13 @@ const Projects = () => {
   return (
     <>
       <Title>Side projects</Title>
-      {/* <TabBar
-        topics={['Coding', 'Articles', 'Artwork']}
-        activeTopic={activeTopic}
-        onClick={setActiveTopic}
-      /> */}
       <ProjectsGrid>
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
               <Square
                 key={idx}
-                image={`/images/${project.img}`}
+                image={project.img}
                 url={project.url}
               />
               <div
@@ -102,6 +102,7 @@ const Projects = () => {
                   fontWeight: 'bold',
                   fontSize: 18,
                   marginBottom: 8,
+                  color: Colors.dark
                 }}
               >
                 {project.title}

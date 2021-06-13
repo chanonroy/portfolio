@@ -1,22 +1,35 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Breakpoints } from '../@types/types'
+import { Breakpoints } from '../@types'
 import Title from './Title'
+import canadaImg from "../images/about/canada.svg"
+import guitarImg from "../images/about/guitar.svg"
+import interfaceImg from "../images/about/interface.svg"
 
 const aboutItems = [
   {
-    text: "I'm currently focused on building digital products at Wealthsimple",
-    img: 'wealthsimple.png',
+    text: "I'm currently focused on web and mobile app development",
+    img: interfaceImg,
+    alt: "current-focus"
   },
   {
     text: "I've lived across the world, but my hometown is Ottawa, Canada",
-    img: 'canada.svg',
+    img: canadaImg,
+    alt: "canada"
   },
   {
-    text: 'On the side, I play classical guitar and obsess over film analysis',
-    img: 'guitar.svg',
+    text: 'On the side, I play classical guitar and obsess over film studies',
+    img: guitarImg,
+    alt: "guitar"
   },
 ]
+
+const AboutContainer = styled.div`
+  margin-bottom: 200px;
+  @media (max-width: ${`${Breakpoints.Small}px`}) {
+    margin-bottom: 80px;
+  }
+`
 
 const AboutGrid = styled.div`
   display: grid;
@@ -32,22 +45,23 @@ const AboutGrid = styled.div`
 
 const About = () => {
   return (
-    <div style={{ marginBottom: 200 }}>
+    <AboutContainer>
       <Title>More about me</Title>
       <AboutGrid>
         {aboutItems.map((item, idx) => (
           <div key={idx} style={{ textAlign: 'center' }}>
             <div>
               <img
-                src={`/images/${item.img}`}
+                src={item.img}
                 style={{ width: 80, marginBottom: 30 }}
+                alt=""
               />
             </div>
             <div style={{ color: 'darkgrey' }}>{item.text}</div>
           </div>
         ))}
       </AboutGrid>
-    </div>
+    </AboutContainer>
   )
 }
 

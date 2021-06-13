@@ -6,7 +6,10 @@ import {
 } from '@styled-icons/boxicons-logos'
 import React from 'react'
 import styled from 'styled-components'
-import { Breakpoints } from '../@types/types'
+import { Breakpoints, Colors } from '../@types'
+import ukFlagImg from "../images/uk-flag.svg"
+import chanonImg from "../images/chanon.png"
+import chanonWideImg from "../images/chanon-wide.png"
 
 const socialLinks = [
   {
@@ -60,8 +63,20 @@ const PersonContainer = styled.div`
     justify-content: center;
     margin-bottom: 60;
   }
+`
+
+const ImageNarrow = styled.img`
+  align-self: center;
+  max-width: 550px;
+  @media (min-width: ${`${Breakpoints.Small}px`}) {
+    display: none;
+  }
+`
+
+const ImageWide = styled.img`
+  max-width: 300px;
   @media (max-width: ${`${Breakpoints.Small}px`}) {
-    justify-content: flex-end;
+    display: none;
   }
 `
 
@@ -75,24 +90,26 @@ const Jumbo = () => {
             lineHeight: 1,
             fontSize: 48,
             marginBottom: 15,
+            color: Colors.dark
           }}
         >
           Hi there
         </div>
-        <div style={{ fontSize: 24, color: '#6E7272', marginBottom: 15 }}>
+        <div style={{ fontSize: 24, color: Colors.grey, marginBottom: 15 }}>
           My name is Chanon
         </div>
 
         <div
           style={{
             fontSize: 18,
-            color: '#6E7272',
+            color: Colors.grey,
             marginBottom: 25,
           }}
         >
           <span>I’m a software developer living in London</span>
           <img
-            src={'/images/uk-flag.svg'}
+            src={ukFlagImg}
+            alt="uk-flag"
             style={{ width: 20, marginLeft: 8, verticalAlign: 'middle' }}
           />
         </div>
@@ -115,9 +132,12 @@ const Jumbo = () => {
         </div>
       </TextContainer>
       <PersonContainer>
-        <img
-          style={{ maxWidth: 300 }}
-          src={'/images/chanon.png'}
+        <ImageWide
+          src={chanonImg}
+          alt={'chanon'}
+        />
+        <ImageNarrow
+          src={chanonWideImg}
           alt={'chanon'}
         />
       </PersonContainer>

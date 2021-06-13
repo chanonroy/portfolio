@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Breakpoints } from '../@types/types'
+import { Breakpoints } from '../@types'
 
 const StyledContainer = styled.div`
   max-width: 550px;
