@@ -7,6 +7,7 @@ import driveImg from "../images/projects/drive.png"
 import catDogImg from "../images/projects/catdog.png"
 import raycasterImg from "../images/projects/raycaster.png"
 import bananasImg from "../images/projects/bananas.png"
+import earthImg from "../images/projects/earth.png"
 
 const projects = [
   {
@@ -44,6 +45,14 @@ const projects = [
     title: 'Banana Classifier',
     subtitle: 'Ripeness classification from a limited dataset',
     url: 'https://github.com/chanonroy/banana-classifier/blob/main/train.ipynb',
+  },
+  {
+    img: earthImg,
+    alt: "earth",
+    title: "React Globe ISS Tracker",
+    subtitle:
+      "Tracking the International Space Station on a 3D globe with Three.js",
+    url: "https://react-globe-iss.vercel.app/",
   },
 ]
 
