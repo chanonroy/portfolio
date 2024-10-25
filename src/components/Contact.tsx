@@ -1,16 +1,16 @@
 import styled from "styled-components";
 import { Breakpoints } from "../@types";
-import { Email } from "@styled-icons/material/Email"
-import drinksImg from "../images/contact/drinks.svg"
+import { Email } from "@styled-icons/material/Email";
+import drinksImg from "../images/contact/drinks.svg";
 
 const Wrapper = styled.div`
   display: flex;
   position: relative;
-  background-color: #547BAD;
+  background-color: #547bad;
   width: 100%;
   height: 375px;
   padding: 40px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   border-radius: 5px;
   box-sizing: border-box;
   @media (max-width: ${`${Breakpoints.Small}px`}) {
@@ -24,7 +24,7 @@ const Header = styled.div`
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 20px;
-`
+`;
 
 const Image = styled.img`
   position: absolute;
@@ -34,7 +34,7 @@ const Image = styled.img`
   @media (max-width: ${`${Breakpoints.xSmall}px`}) {
     height: 150px;
   }
-`
+`;
 
 export default function Contact() {
   return (
@@ -42,17 +42,15 @@ export default function Contact() {
       <div>
         <Header>Interested in chatting?</Header>
         <div style={{ color: "white", marginBottom: 20 }}>
-          Send me an email or message and let’s chat over your favourite beverage.
+          Send me an email or message and let’s chat over your favourite
+          beverage.
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
           <Email size="20" color="white" style={{ marginRight: 5 }} />
-          <div style={{ color: "white" }}>
-
-            chanonroy@gmail.com
-            </div>
+          <div style={{ color: "white" }}>chanonroy@gmail.com</div>
         </div>
       </div>
       <Image src={drinksImg} />
     </Wrapper>
-  )
+  );
 }

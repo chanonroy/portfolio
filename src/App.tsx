@@ -1,10 +1,8 @@
-import React from 'react';
-import Container from './components/Container';
-import Jumbo from './components/Jumbo';
-import Projects from './components/Projects';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Contact from "./components/Contact";
+import Container from "./components/Container";
+import Footer from "./components/Footer";
+import Jumbo from "./components/Jumbo";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -12,7 +10,7 @@ function App() {
       <Jumbo />
       <Projects />
       <Contact />
-      <About />
+      {/* <About /> */}
       <Footer />
     </Container>
   );
